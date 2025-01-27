@@ -627,6 +627,16 @@ header{
     width: 32vw;
 }
 
+.tdPython{
+    background: url(img/Projets/TD_Algo_carteVitale.png) top center / cover no-repeat;
+    width: 29vw;
+}
+
+.ProjetreseauSocialAvril2024{
+    background: url(img/Projets/reseauSocialAvril2024.png) top center / cover no-repeat;
+    width: 30vw;
+}
+
 .content-projet.content-projet-ProjetExceptionalCarsMai2024{
     width: 40%;
 }
@@ -713,6 +723,15 @@ header{
 }
 .icone-projetPortfolio_6{
     background: url(img/Linux_logo.png) center center / contain no-repeat;
+}
+.icone-ProjetreseauSocialAvril2024_1{
+    background: url(img/HTML5_Logo.png) center center / contain no-repeat;
+}
+.icone-ProjetreseauSocialAvril2024_2{
+    background: url(img/CSS3_Logo.png) center center / contain no-repeat;
+}
+.icone-tdPython{
+    background: url(img/Python_Logo.png) center center / contain no-repeat;
 }
 
 .container-projet:nth-child(even) .icones-projet{
@@ -1784,12 +1803,22 @@ ul li {
   
 
 .container-experiences{
-    padding: 15vh 0;
     min-height: 100vh;
     width: 100%;
     background: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15vh 0;
+    color: #FFF;
 }
 
+.presentation-entreprise{
+    margin: auto;
+    font-family: "zen dots", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 5vh;
+}
 /* .experience{
     display: flex;
     justify-content: space-between;

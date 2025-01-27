@@ -10,11 +10,11 @@ require 'head.php';
 ?>
 <body class="body-projets">
 <?php require 'header.php'?>
-    <section class="section-main-experiences">
+    <section class="section-main-experiences">  
+            <div class="container-experiences">
             <div class="presentation-entreprise">
                 <h3>minstère des Armées / DRHAT</h3>
             </div>
-            <div class="container-experiences">
                 <div class="experience experience-siteRH-terre">
                     <div class="ancien-site"></div>
                     <div class="nouveau-site"></div>

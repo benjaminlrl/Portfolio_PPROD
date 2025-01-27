@@ -55,6 +55,25 @@ require 'head.php';
                 </div>                
             </div>
             <div class="container-projet">
+                <div class="img-projet tdPython"></div>
+                <div class="icones-projet">
+                    <div class="icone-projet icone-tdPython"></div>
+                </div>
+                <div class="content-projet">
+                    <div class="title-projet">
+                        <i class="fa-regular fa-gamepad"></i>
+                        <h3>TD Python</h3>
+                    </div>
+                    <?php if($langue === "français"): ?>
+                    <p>Dans le cadre d'un projet scolaire, à partir d'un code fourni par ma professeure, j'ai eu pour mission d'optimiser le code ainsi que de l'améliorer en rajoutant un système de niveaux. Après avoir créer le système de niveaux, j'ai décidé de franchir un steps supérieur et d'implémenter un système permettant à l'utilisateur de sélectionner les cartes avec lesquelles il souhaite jouer. Par la suite j'ajouterais différentes fonctionnalités comme un timer, un mode où le joueur sélectionner un thème de carte avec lesquels il veut jouer, une musique de fond...</p>
+                    <?php endif ?>
+                    <?php if($langue === "english"): ?>
+                    <p>As part of a school project, based on a code provided by my teacher, I was tasked with optimizing the code and improving it by adding a level system. After creating the level system, I decided to take it a step further and implement a system that allows the user to select the cards they want to play with. Later, I plan to add various features such as a timer, a mode where the player can choose a card theme to play with, background music, and more...</p>
+                    <?php endif ?>
+                    <!-- <a href="https://github.com/benjaminlrl/2024_memory_tp">En savoir plus <i class="fa-solid fa-arrow-right"></i></a> -->
+                </div>                
+            </div>
+            <div class="container-projet">
                 <div class="img-projet projetPhishingNdlr"></div>
                 <div class="icones-projet">
                     <div class="icone-projet icone-PhishingNdlr1"></div>
@@ -129,6 +148,26 @@ require 'head.php';
                     </div>
                     <?php if($langue === "français"): ?>
                     <p>Ce projet ma permis d'apprendre à utiliser les flexboxs en CSS, une maitrise essentielle pour le developpement de page web. Le but de ce projet été de créer un site web de quelque page afin d'y ajouter du contenu pour utiliser les flexboxs. Afin de pouvoir maîtriser les flexboxs je vous conseille le jeu du site flexboxfroggy.com. C'est un super jeu pour comprendre et apprendre les proriétées des flexboxs</p>
+                    <?php endif ?>
+                    <?php if($langue === "english"): ?>
+                    <p>Creating a simple blog page in HTML and CSS involves designing a basic structure that includes a header, a section for the content of the articles, and a footer. In HTML, elements like are used to organize the page. CSS is applied to style the page, such as arranging the articles, adding colors, and selecting fonts. Users can then view a functional and aesthetically pleasing blog with a clear layout for reading the articles</p>
+                    <?php endif ?>
+                    <!-- <a href="https://github.com/benjaminlrl/2024_memory_tp">En savoir plus <i class="fa-solid fa-arrow-right"></i></a> -->
+                </div>                
+            </div>
+            <div class="container-projet">
+                <div class="img-projet ProjetreseauSocialAvril2024"></div>
+                <div class="icones-projet">
+                    <div class="icone-projet icone-ProjetreseauSocialAvril2024_1"></div>
+                    <div class="icone-projet icone-ProjetreseauSocialAvril2024_2"></div>
+                </div>
+                <div class="content-projet">
+                    <div class="title-projet">
+                        <i class="fa-regular fa-messages"></i>
+                        <h3>Page de réseau social</h3>
+                    </div>
+                    <?php if($langue === "français"): ?>
+                    <p>La création d'une page de blog simple en HTML et CSS consiste à concevoir une structure de base comprenant un en-tête, une section pour le contenu des articles, et un pied de page. En HTML, on utilise des balises pour organiser la page. Le CSS est utilisé pour ajouter du style à la page, comme la mise en page des articles, les couleurs, et les polices. Les utilisateurs peuvent ainsi voir un blog fonctionnel et esthétiquement agréable, avec une disposition claire pour la lecture des articles</p>
                     <?php endif ?>
                     <?php if($langue === "english"): ?>
                     <p>Creating a simple blog page in HTML and CSS involves designing a basic structure that includes a header, a section for the content of the articles, and a footer. In HTML, elements like are used to organize the page. CSS is applied to style the page, such as arranging the articles, adding colors, and selecting fonts. Users can then view a functional and aesthetically pleasing blog with a clear layout for reading the articles</p>

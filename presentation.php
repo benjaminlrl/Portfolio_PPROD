@@ -11,7 +11,7 @@
                     <p>J'adore coder des projets, construire des applications ou créer des algorithmes pour résoudre divers problèmes</p><br>
                     <p>Je suis principalement axé sur la création de <span class='important'>sites web</span> ainsi que de <span class='important'>solutions logicielles et applications</span></p><br>
                     <p>J'ai débuté en auto-didacte avec <span class='important'>HTML5, CSS et PHP</span> et je suis aujourd'hui étudiant en 1ère année de <span class='important'>BTS SIO SLAM en Alternance</span> dans la ville de Tours</p><br>
-                    <p>À côté de tous cela, je pratique la <span class='important'>courses à pied</span> en dans le club d'athlétisme <span class='important'>FreeRunAthlé37</span> à Tours. Ayant des ambitions dans ce sport je tourne ma vie autour de celui-ci. Avec 8 à 13 heures de sports par semaines, et un BTS en alternance, <span class='important'>la discipline n'est plus une option</span> pour devenir la personne que je rêve d'être</p>
+                    <p>À côté de tous cela, je pratique la <span class='important'>courses à pied</span> avec le club d'athlétisme <span class='important'>FreeRunAthlé37</span> à Tours. Ayant des ambitions dans ce sport je tourne ma vie autour de celui-ci. Avec 8 à 13 heures de sports par semaines, et un BTS en alternance, <span class='important'>la discipline n'est plus une option</span> pour devenir la personne que je rêve d'être</p>
                 <?php endif ?>
                 <?php if($langue === "english"): ?>
                     <div class='title-presentation'>
