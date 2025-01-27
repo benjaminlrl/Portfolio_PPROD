@@ -910,7 +910,7 @@ header{
 }
 .container-portefeuilledecompetences{
     width: 70vw;
-    height: 75vh;
+    height: 85vh;
     border-radius: 15px;
     border: #fff solid 1px;
     background: url(img/portefeuilledecompetense.png) top center / cover no-repeat;
@@ -1237,7 +1237,6 @@ header{
 
 .succesDeconnexion,
 .succesConnexion,
-.echecConnexion,
 .succesInscription{
     display: flex;
     flex-direction: column;
@@ -1245,6 +1244,22 @@ header{
     justify-content: center;
     width: 700px;
     background: transparent;
+    color: var(--color);
+    border-radius: 10px;
+    padding: 40px 50px;
+    border: 2px solid rgba(255, 255, 255, 0.807);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px  rgba(0, 0, 0, .2);
+    font-family: 'Poppins', sans-serif;
+}
+
+.echecConnexion{
+    background: url(img/riodejaneiro.JPEG) center center / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
     color: var(--color);
     border-radius: 10px;
     padding: 40px 50px;
@@ -1498,10 +1513,9 @@ ul li {
     /* justify-content: center; */
   }
 
-.footer_link li a i{
+.footer_link li i{
     font-size: 15px;
     margin-left: 5px;
-    color: var(--background);
 }
   
 .footer__links .footer__link {

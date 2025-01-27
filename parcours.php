@@ -33,17 +33,17 @@
                 <div class='formation'>
                     <i class='fa-solid fa-spinner'></i>
                     <h4 class='etablissement'>ISCB</h4>
-                    <p><span class='important'>BTS SIO SLAM</span> at ISCB school. I am working in a work-study program for the <span class='important'>Ministry of the Armed Forces</span> / <span class='important'>DRHAT</span>. I chose the <span class='important'>SLAM</span> option to solidify the foundation of my future career plan: becoming one of the best <span class='important'>web developers</span>. While gaining professional experience, I am pursuing a 2-year program that will help me develop numerous <span class='important'>professional and technical skills</span>.</p>
+                    <p><span class='important'>BTS SIO SLAM</span> at ISCB school. I am working in a work-study program for the <span class='important'>Ministry of the Armed Forces</span> / <span class='important'>DRHAT</span>. I chose the <span class='important'>SLAM</span> option to solidify the foundation of my future career plan: becoming one of the best <span class='important'>web developers</span>. While gaining professional experience, I am pursuing a 2-year program that will help me develop numerous <span class='important'>professional and technical skills</span></p>
                 </div>
                 <div class='formation'>
                     <i class='fa-regular fa-award'></i>
                     <h4 class='etablissement'>Lycée Tours Fondettes Agrocampus</h4>
-                    <p>General <span class='important'>High School Diploma</span> program at Lycée Tours Fondettes Agrocampus, with the achievement of the General Baccalaureate with <span class='important'>Honors</span>. Specializations included Mathematics, Biology-Ecology, and Physics-Chemistry.</p>
+                    <p>General <span class='important'>High School Diploma</span> program at Lycée Tours Fondettes Agrocampus, with the achievement of the General Baccalaureate with <span class='important'>Honors</span>. Specializations included Mathematics, Biology-Ecology, and Physics-Chemistry</p>
                 </div>
                 <div class='formation'>
                     <i class='fa-sharp fa-solid fa-lightbulb-gear'></i>
                     <h4 class='etablissement'>Futur</h4>
-                    <p>After earning my BTS in 2026, I plan to pursue a <span class='important'>professional bachelor's degree</span> in web development, followed by a <span class='important'>Master's degree</span> to achieve a <span class='important'>BAC+5</span>. I aim to continue in <span class='important'>work-study programs</span> to work on concrete projects that will help me reach my goals.</p>
+                    <p>After earning my BTS in 2026, I plan to pursue a <span class='important'>professional bachelor's degree</span> in web development, followed by a <span class='important'>Master's degree</span> to achieve a <span class='important'>BAC+5</span>. I aim to continue in <span class='important'>work-study programs</span> to work on concrete projects that will help me reach my goals</p>
                 </div>
             </div>
             <?php endif ?>
