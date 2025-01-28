@@ -13,7 +13,7 @@
                                 <i class="fa-regular fa-reflect-horizontal"></i>
                             </div>
                             <div class='card-back'>
-                                <p>J'ai obtenu mon bac spécialités Mathématiques, Biologie-Écologie <span class='important'><strong>MENTION ASSEZ BIEN</strong></span> au LEGTA de Fondettes</p>
+                                <p>J'ai obtenu mon bac spécialités Mathématiques, Biologie-Écologie <a href="doc/Releve_de_Notes_BAC"><span class='important certification_link'><strong>MENTION ASSEZ BIEN</strong></span></a> au LEGTA de Fondettes</p>
                             </div>
                         </div>
                     </div>            
@@ -24,7 +24,7 @@
                                 <i class="fa-regular fa-reflect-horizontal"></i>
                             </div>
                             <div class='card-back'>
-                                <p>Code de vérification: <br><span class='important'><strong>P-KHGYPYFD</strong></span></p>
+                                <p>Code de vérification: <br><a href="https://app.pix.fr/partage-certificat/5353542"><span class='important certification_link'><strong>P-KHGYPYFD</strong></span></a></p>
                             </div>
                         </div>
                     </div>

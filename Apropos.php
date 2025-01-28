@@ -13,6 +13,9 @@ require 'head.php';
     <section class="section-main-apropos">
         <div class="apropos-wrapper">
             <div class="grid-container-apropos">
+                <div class="content-apropos informatique">   
+                    <div class="title-content-horizontal"><p>INFORMATIQUE</p></div>               
+                </div>
                 <div class="content-apropos title">
                     <div class="title-content-vertical">
                             <span>S</span>

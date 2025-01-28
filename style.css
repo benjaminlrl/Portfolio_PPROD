@@ -1537,15 +1537,18 @@ ul li {
     margin-left: 5px;
 }
   
+.certification_link,
 .footer__links .footer__link {
     transition: all 150ms ease-out;
     display: inline-block;
   }
-  
+
+.certification_link:hover:after,
 .footer__link:hover:after {
       width: 100%;
   }
-  
+
+.certification_link:after,
 .footer__link:after {
       content: '';
       display: block;
@@ -1614,14 +1617,15 @@ ul li {
   .grid-container-apropos {
     margin: auto;
     width: 80vw;
-    height: 70vh;
+    height: 80vh;
     display: grid;
     gap: 5px;
     grid-template-areas:
+      "informatique informatique informatique"
       "title running running"
       "title natation velo";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr); /* Ajuste les lignes pour une meilleure distribution */
+    grid-template-rows: repeat(3, 1fr); /* Ajuste les lignes pour une meilleure distribution */
     margin-bottom: 5vh;
   }
 
@@ -1681,7 +1685,7 @@ ul li {
   }
 
   .velo {
-    background: url(img/orage.JPEG) center center / cover no-repeat;
+    background: url(img/montagne.JPEG) center center / cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1693,7 +1697,7 @@ ul li {
   }
 
   .natation {
-    background: url(img/montagne.JPEG) center center / cover no-repeat;
+    background: url(img/montagne.JPEG) top center / cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1701,6 +1705,18 @@ ul li {
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
     grid-area: natation;
+    height: 100%;
+  }
+
+  .informatique{
+    background: url(img/orage.JPEG) center center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    grid-area: informatique;
     height: 100%;
   }
 
