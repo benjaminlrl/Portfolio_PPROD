@@ -10,10 +10,10 @@
         <?php if ($langue === "français"):?>
                 <div class='items-link'>
                     <a href='projets.php' class='item-link nav-link drop3'>Projets</a>
-                <?php if (isset($_SESSION['user_email'])): ?>
-                    <a href='experiences.php' class='item-link nav-link drop3'>Expériences</a>
+                <?php if (isset($_SESSION['user_email'])): ?>                    
                     <a href='portefeuilledecompetences.php' class='item-link nav-link drop3'>Portefeuille de compétences</a>
                 <?php endif ?>
+                    <a href='experiences.php' class='item-link nav-link drop3'>Expériences professionnelles</a>
                     <a href='index.php' class='item-link nav-link drop3'>Accueil</a>
                     <a href='Apropos.php' class='item-link nav-link drop4'>À propos</a>
                     <a href='login.php' class='item-link nav-link drop5'>
@@ -29,9 +29,9 @@
                 <div class='items-link'>
                     <a href='projets.php' class='item-link nav-link drop3'>Porjects</a>
                 <?php if (isset($_SESSION['user_email'])): ?>
-                    <a href='experiences.php' class='item-link nav-link drop3'>Experiences</a>
                     <a href='portefeuilledecompetences.php' class='item-link nav-link drop3'>Skills portfolio</a>
                 <?php endif ?>
+                    <a href='experiences.php' class='item-link nav-link drop3'>Professionals experiences</a>
                     <a href='index.php' class='item-link nav-link drop3'>Home</a>
                     <a href='Apropos.php' class='item-link nav-link drop4'>About me</a>
                     <a href='login.php' class='item-link nav-link drop4'>

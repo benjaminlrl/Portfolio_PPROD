@@ -113,7 +113,7 @@ header{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 90%;
+    width: 95%;
     margin: auto;
     margin-top: 15px;
 }
@@ -568,7 +568,7 @@ header{
 .container-projet{
     width: 55%;
     padding: 20px;
-    height: 45vh;
+    min-height: 45vh;
     margin: 0 0 15vh 10%;
     display: flex;
     flex-direction: row;
@@ -659,6 +659,7 @@ header{
     position: absolute;
 }
 
+.icone-experience,
 .icone-projet{
     width: 5vw;
     height: 80%;
@@ -722,7 +723,7 @@ header{
     background: url(img/SQL.png) center center / contain no-repeat;
 }
 .icone-projetPortfolio_6{
-    background: url(img/Linux_logo.png) center center / contain no-repeat;
+    background: url(img/Debian_Logo.png) center center / contain no-repeat;
 }
 .icone-ProjetreseauSocialAvril2024_1{
     background: url(img/HTML5_Logo.png) center center / contain no-repeat;
@@ -1273,7 +1274,6 @@ header{
 }
 
 .echecConnexion{
-    background: url(img/riodejaneiro.JPEG) center center / cover no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1660,7 +1660,8 @@ ul li {
   }
   
   .running {
-    background: url(img/IMG_0498.JPEG) center left / cover no-repeat;
+    background: url(img/pisteAthle_Crop.jpeg) bottom center / cover no-repeat;
+    text-shadow: #000 0 0 5px;
     grid-area: running;
     height: 100%;
     display: grid;
@@ -1825,6 +1826,7 @@ ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 15vh 0;
     color: #FFF;
 }
@@ -1833,7 +1835,13 @@ ul li {
     margin: auto;
     font-family: "zen dots", sans-serif;
     font-size: 2rem;
-    margin-bottom: 5vh;
+    margin-bottom: 10vh;
+    text-align: center;
+    padding: 0 5vw;
+}
+
+.presentation-entreprise span{
+    color: var(--troisiemeCouleur);
 }
 /* .experience{
     display: flex;
@@ -1856,6 +1864,13 @@ ul li {
 
 }
 
+.section-main-experiences{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .experience .ancien-site{
     border-radius: 10px;
     background: url(img/Projets/screen_rh_terre_ancienne_version.png) top center / cover no-repeat;
@@ -1871,6 +1886,7 @@ ul li {
 .contenu-experience{
     grid-area: description-experience;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
@@ -1879,10 +1895,55 @@ ul li {
     text-align: center;
 }
 
+.content-experience-description{
+    display: flex;
+    flex-direction: column;
+    border: #fff 1px solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.icones-experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: auto;
+    height: 3rem;
+}
+
+
+.icone-competence-experience_1{
+    background: url(img/AlmaLinux_Logo.png) center center / contain no-repeat;
+    width: 50px;
+}
+.icone-competence-experience_2{
+    background: url(img/PhpMyAdmin_Logo.png) center center / contain no-repeat;
+    width: 50px;
+}
+.icone-competence-experience_3{
+    background: url(img/SQL.png) center center / contain no-repeat;
+    width: 50px;
+}
+.icone-competence-experience_4{
+    background: url(img/mobaxterm_Logo.png) center center / contain no-repeat;
+    width: 50px;
+}
+.icone-competence-experience_5{
+    background: url(img/VirtualBox_Logo.png) center center / contain no-repeat;
+    width: 50px;
+}
+.icone-competence-experience_6{
+    background: url(img/VirtualBox_Logo.png) center center / contain no-repeat;
+    width: 50px;
+}
+
+
 .ancienne-version{
-    align-self: end;
+    align-self: start;
+    margin-bottom: 5vh;
 }
 
 .nouvelle-version{
-    align-self: start;
+    align-self: end;
+    margin-top: 5vh;
 }

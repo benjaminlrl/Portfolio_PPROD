@@ -27,10 +27,10 @@
                             <i class='fa-solid fa-lock-keyhole' style='color: #fff;'></i>
                         </div>
 
-                        <div class='remember-forgot-login'>
+                        <!-- <div class='remember-forgot-login'>
                             <label><input type='checkbox'>Se souvenir de moi</label>
                             <a href='#'>Mot de passe oublié ?</a>
-                        </div>
+                        </div> -->
                         <button type='submit'class='btn-submit-login'>Se connecter<i class='fa-solid fa-right-to-bracket'></i></button>
 
                         <div class='register-link-login'>

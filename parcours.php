@@ -9,8 +9,8 @@
                 </div> 
                 <div class='formation'>
                     <i class='fa-solid fa-spinner'></i>
-                    <h4 class='etablissement'>ISCB</h4>
-                    <p><span class='important'>BTS SIO SLAM</span> à l'école ISCB - Je suis en alternance pour le <span class='important'>ministère des armées </span> / <span class='important'>DRHAT</span>. J'ai choisi l'option <span class='important'>SLAM</span> afin de concrétiser le lancement de mon projet d'avenir, devenir un des meilleurs <span class='important'>développeur web</span>. Tout en gagnant de l'expérience professionelle, je suis une formation de 2 ans qui va me permettre d'acquérir de nombreuses <span class='important'>qualités professionelles et techniques</span>.</p>
+                    <h4 class='etablissement'>CFA ISCB</h4>
+                    <p><span class='important'>BTS SIO SLAM</span> à l'école ISCB - Je suis en alternance pour le <span class='important'>ministère des armées </span> / <span class='important'>DRHAT</span>. J'ai choisi l'option <span class='important'>SLAM</span> afin de concrétiser le lancement de mon projet d'avenir, devenir un des meilleurs <span class='important'>développeur web</span>. Tout en gagnant de l'expérience professionelle, je suis cette formation de 2 ans qui va me permettre d'acquérir de nombreuses <span class='important'>qualités professionelles et techniques</span>.</p>
                 </div>          
                 <div class='formation'>
                     <i class='fa-regular fa-award'></i>
@@ -32,7 +32,7 @@
                 </div>
                 <div class='formation'>
                     <i class='fa-solid fa-spinner'></i>
-                    <h4 class='etablissement'>ISCB</h4>
+                    <h4 class='etablissement'>CFA ISCB</h4>
                     <p><span class='important'>BTS SIO SLAM</span> at ISCB school. I am working in a work-study program for the <span class='important'>Ministry of the Armed Forces</span> / <span class='important'>DRHAT</span>. I chose the <span class='important'>SLAM</span> option to solidify the foundation of my future career plan: becoming one of the best <span class='important'>web developers</span>. While gaining professional experience, I am pursuing a 2-year program that will help me develop numerous <span class='important'>professional and technical skills</span>.</p>
                 </div>
                 <div class='formation'>

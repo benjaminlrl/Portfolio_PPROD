@@ -17,7 +17,7 @@
     const animatedTextElement = document.getElementById("animatedText");
     if (animatedTextElement) {
         const textList = <?php echo $langue === "français" ? 
-            '["Etudiant en alternance...", "Athlète pour FreeRunAthlé37..."]' : 
+            '["Étudiant en alternance...", "Athlète pour FreeRunAthlé37..."]' : 
             '["I am an apprentice developer.", "Check out my portfolio!"]'; ?>;
 
         setTimeout(() => {
