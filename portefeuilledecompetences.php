@@ -13,7 +13,7 @@ require 'head.php';
     <section class="section-main-portefeuilledecompetences">
             <div class="container-portefeuilledecompetences">
             </div>
-            <div class="content-projet">
+            <div class="btn-download-portefeuille">
                 <a href="doc/portefeuilledecompetense.pdf" download>Télécharger le portefeuille de compétences <i class='fa-regular fa-arrow-up-right-from-square'></i></a>
             </div>
     </section>

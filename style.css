@@ -1094,6 +1094,22 @@ header{
     border-radius: 15px;
     border: #fff solid 1px;
     background: url(img/portefeuilledecompetense.png) top center / cover no-repeat;
+    margin-bottom: 5vh;
+}
+
+.btn-download-portefeuille a{
+    border: var(--color) 2px solid;
+    background: var(--background);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 5px 15px;
+    border-radius: 50px;
+    transition: .3s ease-out;
+}
+
+.btn-download-portefeuille a:hover{
+    background-color: var(--color);
+    color: var(--troisiemeCouleur);
 }
 
 /* PresentationNDLR */
