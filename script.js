@@ -105,7 +105,7 @@ links.forEach(link => {
     }
 });
 
-//btn theme color
+// btn theme color
 // const button = document.getElementById('changeColorBtn');
 // let couleur = "sombre"; 
 

@@ -9,13 +9,24 @@
         
         <ul class="footer__links">
           <li>
-            <?php if(isset($_SESSION['group']) && ($_SESSION['group']) === "admin"){echo("<a href='formContact.php' class='footer__link'>");
-            if($langue === "français")echo("Me contacter</a>");if($langue === "english")echo("Contact me");echo("
+            <a href='formContact.php' class='footer__link'>
+                <?php 
+                    if ($langue === "français") {
+                        echo "Me contacter";
+                    } elseif ($langue === "english") {
+                        echo "Contact me";
+                    }
+                ?>
+            </a>
           </li>
+          <?php if(isset($_SESSION['user_group']) && $_SESSION['user_group'] === "admin") :?>
           <li>
-            <a href='doc/02012025_CV_Benjamin_Lorieul.pdf' target='_blank' class='footer__link'>"); if($langue === "français")echo("Mon CV <i class='fa-regular fa-arrow-up-right-from-square'></i>");if($langue === "english")echo("My CV <i class='fa-regular fa-arrow-up-right-from-square'></i>");echo("</a>
-            
-          </li>");}?>
+            <a href='doc/02012025_CV_Benjamin_Lorieul.pdf' target='_blank' class='footer__link'>
+              <?php if($langue === "français") echo("Mon CV")?>
+              <?php if($langue === "english") echo("My CV ") ?> 
+            <i class='fa-regular fa-arrow-up-right-from-square'></i></a>
+          </li>
+          <?php endif ?>
           <li>
               <a href="https://www.iscb.fr/" class="footer__link" target="_blank" >iscb.fr <i class='fa-regular fa-arrow-up-right-from-square'></i></a>
               

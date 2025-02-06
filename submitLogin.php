@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Connexion réussie
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['user_email'] = $user['user_email'];
-        $_SESSION['group'] = $user['user_group'];
+        $_SESSION['user_group'] = $user['user_group'];
         header("Location: succesLogin.php");
         exit;
     } else {

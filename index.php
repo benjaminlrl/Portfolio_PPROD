@@ -11,7 +11,7 @@ require 'head.php';
 <body class="body-login">
 <section class="section-accueil" id="section-accueil" style="<?= $sectionStyle; ?>">
 <?php require 'header.php';?>
-<?php require 'accueil"php';?>
+<?php require 'accueil.php';?>
 </section> 
 <div class="icone-up">
     <i class="fa-solid fa-arrow-up fa-bounce fa-2xl"></i>

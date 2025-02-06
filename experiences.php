@@ -20,7 +20,7 @@ require 'head.php';
                     <a href="login.php" class="btnRedirection">Se connecter</a>
                 </div> 
         <?php endif; ?> 
-        <?php if (isset($_SESSION['user_email'])): ?>
+        <?php if(isset($_SESSION['user_group']) && ($_SESSION['user_group']) === "admin"): ?>
             <div class="presentation-entreprise">
                 <h3>minstère des Armées / <span>D</span>irection des <span>R</span>essources <span>H</span>umaine de l'<span>A</span>rmée de <span>T</span>erre</h3>
             </div>

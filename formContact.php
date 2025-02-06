@@ -22,7 +22,12 @@ $titlePage='Me contacter' ?>
                 <div class="input-box-meContacter message">
                     <textarea name="message" placeholder="Votre message..." rows="8" required></textarea>
                 </div>
-                <button type="submit" class="btn-submit-meContacter">Envoyer</button>
+                <input type="text" name="honeypot" style="display:none;">
+                <div class="confidentialite-check">
+                    <input type="checkbox" name="confidentialite-check" id="confidentialite-check">
+                    <p>J'accepte que mon adresse email soit récupérée afin de pouvoir être contacté en retour.</p>
+                </div>
+                <button type="submit" class="btn-submit-meContacter">Envoyer  <i class="fa-solid fa-paper-plane"></i></button>
             </form>
         </div>
     </main>
