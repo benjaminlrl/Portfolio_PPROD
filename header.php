@@ -1,14 +1,9 @@
 <!-- HEADER -->
 <header>
     <div class="topbar-wrapper-accueil">
-        <!-- <div class="item-logo drop1">
-            <div class="theme-toggle">
-                <button id="changeColorBtn">Changer de thème</button>
-            </div>
-            <a href="index.php"><h3>Benjamin.</h3></a>
-        </div> -->
         <?php if ($langue === "français"):?>
                 <div class='items-link'>
+                    <button class="theme-toggle" id="changeColorBtn"><i class="fa-solid fa-moon"></i></button>
                     <a href='projets.php' class='item-link nav-link drop3'>Projets</a>
                 <?php if (isset($_SESSION['user_email'])): ?>
                     <a href='portefeuilledecompetences.php' class='item-link nav-link drop3'>Portefeuille de compétences</a>
@@ -27,7 +22,8 @@
         <?php endif ?>
         <?php if ($langue === "english"): ?>
                 <div class='items-link'>
-                    <a href='projets.php' class='item-link nav-link drop3'>Porjects</a>
+                    <button class="theme-toggle" id="changeColorBtn"><i class="fa-solid fa-moon"></i></button>
+                    <a href='projets.php' class='item-link nav-link drop3'>Projects</a>
                 <?php if (isset($_SESSION['user_email'])): ?>
                     <a href='portefeuilledecompetences.php' class='item-link nav-link drop3'>Skills portfolio</a>
                 <?php endif ?>

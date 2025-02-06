@@ -106,22 +106,29 @@ links.forEach(link => {
 });
 
 // btn theme color
-// const button = document.getElementById('changeColorBtn');
-// let couleur = "sombre"; 
+document.addEventListener("DOMContentLoaded", function () {
+    const button = document.getElementById('changeColorBtn');
+    const icon = button.querySelector('i');
 
-// // Ajouter un événement au clic
-// button.addEventListener('click', function() {
-//     if (couleur !== "clear") {
-//         // Passer au thème clair
-//         document.body.style.setProperty('--color', '#000'); // Couleur du texte
-//         document.documentElement.style.setProperty('--background', '#fff'); // Couleur de fond
-//         couleur = "clear";  // Mise à jour de la variable couleur
-//     } else {
-//         // Passer au thème sombre
-//         document.body.style.setProperty('--color', '#fff'); // Couleur du texte
-//         document.documentElement.style.setProperty('--background', '#000'); // Couleur de fond
-//         couleur = "sombre";  // Mise à jour de la variable couleur
-//     }
-// });
+    // Vérifier le mode actuel stocké dans localStorage
+    if (localStorage.getItem('theme') === 'light') {
+        document.body.classList.add('light-mode');
+        icon.classList.replace('fa-moon', 'fa-sun-bright'); // 🌙 → ☀️
+    }
+
+    // Ajouter un événement au clic
+    button.addEventListener('click', function () {
+        document.body.classList.toggle('light-mode');
+
+        if (document.body.classList.contains('light-mode')) {
+            localStorage.setItem('theme', 'light');
+            icon.classList.replace('fa-moon', 'fa-sun-bright'); // Changer icône en ☀️
+        } else {
+            localStorage.setItem('theme', 'dark');
+            icon.classList.replace('fa-sun-bright', 'fa-moon'); // Changer icône en 🌙
+        }
+    });
+});
+
 
 

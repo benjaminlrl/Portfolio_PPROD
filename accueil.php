@@ -1,10 +1,10 @@
 <!-- MAIN -->
 <div class="main-accueil">
     <?php if($langue === "français"): ?>
-        <h2>bonjour&nbsp;! <i class="fa-thin fa-hand-wave" style="color: #ffffff;"></i><br>je suis Benjamin</h2>
+        <h2>bonjour&nbsp;! <i class="fa-thin fa-hand-wave"></i><br>je suis Benjamin</h2>
             <div class="main-status" id="animatedText">&nbsp;</div>
     <?php elseif($langue === "english"): ?>
-        <h2>hi&nbsp;! <i class="fa-regular fa-hand-wave" style="color: #ffffff;"></i><br>I am Benjamin</h2>
+        <h2>hi&nbsp;! <i class="fa-regular fa-hand-wave"></i><br>I am Benjamin</h2>
             <div class="main-status" id="animatedText">&nbsp;</div>
     <?php endif; ?>
     <div class="icone-down">

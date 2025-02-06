@@ -1,19 +1,19 @@
-<?php require 'sessionStart.php' ?>
+<?php require "sessionStart.php";?>
 <?php $delay = 5000;?>
 <?php if($langue === "français"){
-    $succesEnvoieMessage = "Votre message à bine été envoyé, je vous répondrais dès que possible !";
-    $title="Email envoyé avec succés";
+    $succesEnvoieMessage = "Votre message à bien était envoyé, je répondrais dès que possible !";
+    $title="Email envoye avec succes";
     $messageBouton ="Accueil";
 }
 if($langue === "english"){
     $succesEnvoieMessage = "Your message has been succesfully sent, I'll respond you as soon as possible !.";
-    $title="Echec de l'envoie de l'email";
+    $title="Email sent with succes";
     $messageBouton ="Home";
-}
-$titlePage = $title;
-require 'head.php';?>
+}?>
+<?php $titlePage = $title; ?>
+<?php require "head.php";?>
 <head>
-    <meta http-equiv="refresh" content="<?php echo $delay; ?>" url="index.php">
+    <meta http-equiv="refresh" content="<?php echo $delay; ?>;url=index.php">
 </head>
 <body class="body-login">
 <section class='section-succesInscription' id='succesInscription'>
@@ -26,4 +26,4 @@ require 'head.php';?>
         <a href="index.php" class="btnRedirection"><?php echo $messageBouton;?></a>
     </div>
 </section>
-<?php require 'footer.php';?>
+<?php require "footer.php";?>

@@ -16,7 +16,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--background); 
+    background-color: var(--background); 
     margin: 0 0; 
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -24,7 +24,7 @@ html {
 
 
 ::-webkit-scrollbar-thumb {
-    background: #511a55; 
+    background: var(--thumb); 
     border-radius: 3px;
     transition: ease-in-out .3s;
 }
@@ -33,17 +33,44 @@ html {
     background: #d144db; 
 }
 
-body{
+body {
     min-height: 100vh;
     width: 100%;
     --background: #02001a;
+    --second-background:#030021; 
     --color: #fff;
+    --color-footer: #fff;
+    --box-shadow: #ffffff39;
+    --box-shadow-card: #ffffff00;
     --troisiemeCouleur: #d144db;
     --background-footer: #aa28b3;
-    --secondColor: #c8c8c8;
+    --card-front: #100f25;
+    --card-back: #171638;
+    --second-color: #c8c8c8;
     --linearcolor: #000;
+    --thumb: #5b1061; 
+    --placeholder-color: #dededea3;
     overflow-x: hidden;
-    background: var(--background);
+    background-color: var(--background);
+    color: var(--color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Mode clair */
+body.light-mode {
+    --background: #eeeeee;
+    --second-background:#ffffff; 
+    --color: #02001ad5;
+    --second-color: #191919d0;
+    --troisiemeCouleur: #d144dbb9;
+    --background-footer: #aa28b3;
+    --linearcolor: #000;
+    --card-front: #dcdbdb;
+    --card-back: #bbbbbb;
+    --box-shadow: #00000043;
+    --box-shadow-card: #00000043;
+    --thumb: #711277; 
+    --placeholder-color: #00000092;
 }
 
 .sections-container {
@@ -85,7 +112,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: var(--background);
+    background-color: var(--background);
     background-size: cover;
     background-position: center;
     height: 100vh;  
@@ -94,7 +121,7 @@ body{
 /* HEADER */
 
 header{
-    background: #030021;
+    background-color: var(--second-background);
     color: var(--color);
     padding: 15px 0;
     min-height: 75px;
@@ -114,8 +141,18 @@ header{
     align-items: center;
     flex-wrap: wrap;
     width: 95%;
-    margin: auto;
-    margin-top: 15px;
+    margin: 0 auto;
+}
+
+.theme-toggle i{
+    color: var(--color);
+    font-size: 30px;
+}
+
+.theme-toggle{
+    border: none;
+    background-color: transparent;
+    transition: color 0.3s ease;
 }
 
 @media (max-width: 1250px) {
@@ -148,6 +185,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    color: var(--color);
 }
 
 .item-link{
@@ -156,13 +194,13 @@ header{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: .9rem;
-    color: #ffffff77;
+    color: var(--color);
     text-decoration: none;
     transition: ease-in-out .3s;
 }
 .active-link,
 .item-link:hover{
-    color: var(--color);
+    color: var(--second-color);
     background: var(--troisiemeCouleur);
     border-radius: 999rem;
 }
@@ -172,6 +210,7 @@ header{
     height: 50px;
     justify-content: center;
     align-items: center;
+    color: var(--color);
 }
 
 .items-contact a{
@@ -183,6 +222,7 @@ header{
     height: 24px;
     margin: 0 10px;
     background:var(--color);
+    transition: .3s ease;
 }
 
 .items-contact i{
@@ -226,8 +266,8 @@ header{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #050036;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: var(--second-background);
+    box-shadow: 0px 0px 16px var(--box-shadow);
     border-radius: 5px;
     z-index: 1;
     overflow: hidden;
@@ -301,7 +341,7 @@ header{
     text-align: center;
     height: 1.5rem;
     margin-bottom: 30vh;
-    color: #ffffff92;
+    color: var(--second-color)
 }
 
 .status{
@@ -328,7 +368,7 @@ header{
 .section-parcours,
 .section-competences,
 .section-presentation{
-    background: var(--background);
+    background-color: var(--background);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -384,6 +424,7 @@ header{
     color: var(--color);
 }
 
+.card-back.important,
 .important{
     color: var(--troisiemeCouleur);
 }
@@ -512,7 +553,7 @@ header{
     font-size: 1.8rem;
     align-items: baseline;
     margin-bottom: 3vh;
-    color: #fff;
+    color: var(--second-color);
 }
 
 .title-souscompetences h3{
@@ -543,7 +584,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #100f25;
+    background-color: var(--card-front);
     border-radius: 8px;
     width: 32%;
     height: 150px;
@@ -567,7 +608,7 @@ header{
     flex-direction: row;
     justify-content: flex-end;
     border-radius: 15px;
-    border: #FFF 1px solid ;
+    border: var(--color) 1px solid ;
     position: relative;
 }
 
@@ -577,7 +618,7 @@ header{
     top: -4vh; /* Position à partir du haut */
     height: 400px;
     border-radius: 5px;
-    box-shadow: #fff 0 0 5px;
+    box-shadow: var(--box-shadow-card) 0 0 5px;
     backdrop-filter: blur(10px);
 }
 
@@ -589,7 +630,7 @@ header{
         flex-direction: column;
         align-items: center;
         padding-top: 20vh;
-        background: var(--background);
+        background-color: var(--background);
         color: #FFF;
     }
 
@@ -675,7 +716,7 @@ header{
         padding: 0;
         max-width: 50%;
         height: 3rem;
-        background: var(--background);
+        background-color: var(--background);
         position: absolute;
     }
 }
@@ -688,7 +729,7 @@ header{
         flex-direction: column;
         align-items: center;
         padding-top: 35vh;
-        background: var(--background);
+        background-color: var(--background);
         color: #FFF;
     }
 
@@ -731,7 +772,7 @@ header{
         margin: 0;
         padding: 0;
         height: 3rem;
-        background: var(--background);
+        background: var(--background-color);
         position: absolute;
     }
 
@@ -871,7 +912,7 @@ header{
 .content-projet p{
     font-family: 'Poppins', sans-serif;
     font-size: .9rem;
-    color: #ffffffbd;
+    color: var(--second-color);
 }
 
 .container-projet a{
@@ -879,7 +920,7 @@ header{
     border-radius: 20px;
     padding: 8px 20px;
     margin-top: 15px;
-    border: #FFF 1px solid;
+    border: var(--color) 1px solid;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -895,6 +936,7 @@ header{
 .title-projet{
     display: flex;
     align-items: baseline;
+    color: var(--color);
 }
 
 .title-projet i{
@@ -955,7 +997,7 @@ header{
 
 .competence p{
     font-size: .8rem;
-    color: #ffffff77;
+    color: var(--second-color);
 }
 
 .img-competence{
@@ -1032,7 +1074,7 @@ header{
 /* Experience */
 .section-main-portefeuilledecompetences{
     display: flex;
-    background: var(--background);
+    background: var(--background-color);
     width: 100%;
     min-height: 100vh;
     flex-direction: column;
@@ -1052,7 +1094,7 @@ header{
 
 .section-main-presentationNdlr{
     display: flex;
-    background: var(--background);
+    background-color: var(--background);
     width: 100%;
     min-height: 100vh;
     flex-direction: column;
@@ -1077,7 +1119,7 @@ header{
 /* CERTIFICATIONS */
 
 .section-certification{
-    background: var(--background);
+    background-color: var(--background);
     min-height: 80vh;
     display: flex;
     flex-direction: row;
@@ -1136,12 +1178,12 @@ header{
     border-radius: 8px;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    box-shadow: #000016 0 0 10px;
+    box-shadow: var(--box-shadow-card) 0 0 10px;
 
 }
 
 .card-front{
-    background: #100f25;
+    background-color: var(--card-front);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1168,7 +1210,7 @@ header{
 }
 
 .card-back{
-    background: #171638;
+    background: var(--card-back);
     transform: rotateY(180deg);
     font-size: large;
     font-weight: 400;
@@ -1188,7 +1230,7 @@ header{
     width: 1200px;
     margin: auto;
     justify-content: center;
-    background: var(--background);
+    background-color: var(--background);
     padding: 20px 0 40px 0;
 }
 
@@ -1222,22 +1264,17 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: var(--background);
+    background: var(--background-color);
     background-size: cover;
     background-position: center;
     height: 100vh;  
 }
 
-²{
-    padding: 0 5vw;
-}
-
 .section-echecConnexion header,
 .section-succesInscription header,
 .section-login header{
-    background: var(--header);
+    background-color: var(--second-background);
     color: var(--color);
-    height: 85px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -1248,7 +1285,7 @@ header{
 
 .wrapper-login{
     width: minmax(400px,30vw);
-    background: transparent;
+    background-color: transparent;
     color: var(--color);
     border-radius: 10px;
     padding: 30px 40px;
@@ -1274,9 +1311,9 @@ header{
 .input-box-login h3{
     width: 100%;
     height: 100%;
-    background: transparent;
+    background-color: transparent;
     outline: none;
-    border: 2px solid var(--secondColor);
+    border: 2px solid var(--second-color);
     border-radius: 40px;
     font-size: 16px;
     color: var(--color);
@@ -1296,7 +1333,7 @@ header{
 }
 
 .input-box-login input::placeholder{
-    color: var(--secondColor);
+    color: var(--second-color);
 }
 
 .input-box-login i{
@@ -1305,6 +1342,7 @@ header{
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
+    color: var(--second-color);
 }
 
 .wrapper-login .remember-forgot-login{
@@ -1339,7 +1377,7 @@ header{
 .btn-submit-login{
     width: 100%;
     height: 45px;
-    background: transparent;
+    background-color: transparent;
     border: 2px solid var(--color);
     outline: none;
     border-radius: 40px;
@@ -1355,7 +1393,7 @@ header{
 }
 
 .btn-submit-login:hover{
-    background: #fff;
+    background-color: var(--color);
     color: var(--troisiemeCouleur);
 }
 
@@ -1382,7 +1420,7 @@ header{
     align-items: center;
     justify-content: center;
     width: 700px;
-    background: transparent;
+    background-color: transparent;
     color: var(--color);
     border-radius: 10px;
     padding: 40px 50px;
@@ -1468,7 +1506,7 @@ header{
 }
 
 .section-meContacter header{
-    background: transparent;
+    background-color: transparent;
     color: var(--color);
     height: 85px;
     display: flex;
@@ -1481,11 +1519,11 @@ header{
 
 .wrapper-meContacter{
     width: 800px;
-    background: transparent;
+    background-color: transparent;
     color: var(--color);
     border-radius: 10px;
     padding: 30px 40px;
-    border: 2px solid rgba(255, 255, 255, .2);
+    border: 2px solid var(--second-color);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 10px  rgba(0, 0, 0, .2);
     font-family: 'Poppins', sans-serif;
@@ -1532,9 +1570,9 @@ header{
 .input-box-meContacter input{
     height: 100%;
     width: 100%;
-    background: transparent;
+    background-color: transparent;
     outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
+    border: 2px solid var(--second-color);
     border-radius: 40px;
     font-size: 16px;
     color: var(--color);
@@ -1543,7 +1581,7 @@ header{
 
 
 .input-box-meContacter input::placeholder{
-    color: #ffffffb7;
+    color: var(--placeholder-color);
 }
 
 .input-box-meContacter i{
@@ -1569,8 +1607,8 @@ header{
 .btn-submit-meContacter{
     width: 100%;
     height: 45px;
-    background: transparent;
-    border: 2px solid #ffffffcf;
+    background-color: transparent;
+    border: 2px solid var(--second-color);
     outline: none;
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
@@ -1582,7 +1620,7 @@ header{
 }
 
 .btn-submit-meContacter:hover{
-    background: #fff;
+    background-color: #fff;
     color: var(--troisiemeCouleur);
 }
 
@@ -1596,8 +1634,8 @@ textarea {
     width: 100%;
     height: 100%;
     padding: 20px; 
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
+    background-color: transparent;
+    border: 2px solid var(--second-color);
     border-radius: 15px;
     font-size: 16px;
     resize: none;
@@ -1613,7 +1651,7 @@ textarea:focus {
 
 
 textarea::placeholder {
-    color: #ffffffb7;
+    color: var(--placeholder-color);
 }
 /* FOOTER */
 .footer {
@@ -1636,7 +1674,7 @@ ul li {
   }
 .footer .content {
     padding: 2.6rem 0 1rem 0;
-    background: var(--background-footer);
+    background-color: var(--background-footer);
     z-index: 2;
   }
 .footer .content .container {
@@ -1646,7 +1684,7 @@ ul li {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-gap: 1.5rem;
-    color: var(--color);
+    color: var(--color-footer);
   }
 .content h2 {
     margin-bottom: .25rem;
@@ -1655,7 +1693,7 @@ ul li {
   
 .footer__subtitle{
     font-size: 1.1rem;
-    color: #ffffffda;
+    color: var(--color-footer);
   }
   
 .footer__links  {
@@ -1677,6 +1715,7 @@ ul li {
 .certification_link,
 .footer__links .footer__link {
     transition: all 150ms ease-out;
+    color: var(--color-footer);
     display: inline-block;
   }
 
@@ -1702,19 +1741,20 @@ ul li {
 .footer__social {
     font-size: 1.8rem;
     margin-right: 1.5rem;
+    color: var(--color-footer);
     transition: ease-in-out .3s;
   }
 .footer__social:hover {
-    color: var(--background);
+    color: var(--color);
   }
   
 .footer__copy {
     text-align: center;
-    background: var(--background-footer);
+    background-color: var(--background-footer);
     font-size: .875rem;
     font-weight: 600;
     text-align: center;
-    color: var(--color);
+    color: var(--color-footer);
     padding: 3rem 0 2rem;
 }
 @media (max-width: 600px) {
@@ -1747,7 +1787,7 @@ ul li {
     flex-direction: column;
     align-items: center;
     padding-top: 20vh;
-    background: var(--background);
+    background-color: var(--background);
     color: #FFF;
   }
 
@@ -1959,7 +1999,7 @@ ul li {
 .container-experiences{
     min-height: 100vh;
     width: 100%;
-    background: var(--background);
+    background-color: var(--background);
     display: flex;
     flex-direction: column;
     align-items: center;

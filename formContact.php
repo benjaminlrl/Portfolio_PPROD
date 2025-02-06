@@ -12,7 +12,7 @@ require 'head.php';?>
                 <div class="container-input-box-meContacter">
                     <div class="input-box-meContacter email">
                         <input type="email" name="email" placeholder="votre@email.fr" value="<?php if(isset($_SESSION["user_email"])){echo $_SESSION["user_email"];}?>" required>
-                        <i class="fa-solid fa-user" style="color: #fff;"></i>
+                        <i class="fa-solid fa-user"></i>
                     </div>
                     <div class="input-box-meContacter username">
                         <input type="text" name="userName" placeholder="Nom Prénom" required>

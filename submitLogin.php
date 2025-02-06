@@ -1,6 +1,6 @@
 <?php
-use sessionStart;
-use config;
+require 'sessionStart.php';
+require 'config.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Récupérer les données du formulaire

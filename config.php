@@ -1,8 +1,8 @@
 <?php
-define('DB_SERVER', 'localhost');   // L'adresse du serveur MySQL
-define('DB_USERNAME', 'root');       // Nom d'utilisateur de la base de données
-define('DB_PASSWORD', '');           // Mot de passe de l'utilisateur de la base de données
-define('DB_NAME', 'portfolio');        // Nom de la base de données à utiliser
+define('DB_SERVER', '91.216.107.187');   // L'adresse du serveur MySQL
+define('DB_USERNAME', 'benja2535212');       // Nom d'utilisateur de la base de données
+define('DB_PASSWORD', 'xZ3_YAtpeVzKA3M');           // Mot de passe de l'utilisateur de la base de données
+define('DB_NAME', 'benja2535212');        // Nom de la base de données à utiliser
 
 // Fonction de connexion à la base de données
 function getDbConnection() {
