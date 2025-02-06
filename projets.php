@@ -1,10 +1,7 @@
-<?php require 'sessionStart.php';?>
-<?php 
+<?php require 'sessionStart.php';
 if (isset($_GET['langue'])) {
     $langue = htmlspecialchars($_GET['langue']); // Sécurisation de la donnée
 }
-?>
-<?php 
 $titlePage = 'A propos de moi';
 require 'head.php';
 ?>
@@ -32,8 +29,8 @@ require 'head.php';
                     <?php if($langue === "english"): ?>
                     <p>As any self-respecting developer, I had to create a portfolio that reflects both my professional and personal personality. So, I crafted my portfolio with my own hands and a lot of passion. Of course, this portfolio is not yet complete: responsive design, a contact form, my professional experiences, and some details still need to be added. Notably, a feature to provide more detailed access to my projects for the most curious among you....</p>
                     <?php endif ?>
-                    <!-- <a href="https://github.com/benjaminlrl/2024_memory_tp">En savoir plus <i class="fa-solid fa-arrow-right"></i></a> -->
-                </div>                
+                    <a href="https://github.com/benjaminlrl/2024_memory_tp">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
             </div>
             <div class="container-projet">
                 <div class="img-projet projetMemory"></div>
@@ -51,8 +48,8 @@ require 'head.php';
                     <?php if($langue === "english"): ?>
                     <p>As part of a school project, based on a code provided by my teacher, I was tasked with optimizing the code and improving it by adding a level system. After creating the level system, I decided to take it a step further and implement a system that allows the user to select the cards they want to play with. Later, I plan to add various features such as a timer, a mode where the player can choose a card theme to play with, background music, and more....</p>
                     <?php endif ?>
-                    <!-- <a href="https://github.com/benjaminlrl/2024_memory_tp">En savoir plus <i class="fa-solid fa-arrow-right"></i></a> -->
-                </div>                
+                    <a href="https://github.com/benjaminlrl/2024_memory_tp">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
             </div>
             <div class="container-projet">
                 <div class="img-projet tdPython"></div>
@@ -70,8 +67,8 @@ require 'head.php';
                     <?php if($langue === "english"): ?>
                     <p>As part of an algorithmics assignment, we had to create an algorithm that checks if the entered Vitale card number is correct.</p>
                     <?php endif ?>
-                    <!-- <a href="https://github.com/benjaminlrl/2024_memory_tp">En savoir plus <i class="fa-solid fa-arrow-right"></i></a> -->
-                </div>                
+                    <a href="https://github.com/benjaminlrl/2024_memory_tp">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
             </div>
             <div class="container-projet">
                 <div class="img-projet projetPhishingNdlr"></div>
@@ -94,8 +91,8 @@ require 'head.php';
                     <?php if($langue === "english"): ?>
                     <p>Creating a rock-paper-scissors game in console with C# involves implementing the rules of the game using user inputs and random choices for the computer. The game displays the results of each round and declares a winner based on the scores, while using loops and conditions to manage the game logic.</p>
                     <?php endif ?>
-                    <!-- <a href="PhishingNdlrPresentation.php">En savoir plus <i class="fa-solid fa-arrow-right"></i></a> -->
-                </div>                
+                    <a href="PhishingNdlrPresentation.php">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
             </div>
             <div class="container-projet">
                 <div class="img-projet projetChiffoumiGraphique"></div>
@@ -113,8 +110,8 @@ require 'head.php';
                     <?php if($langue === "english"): ?>
                     <p>As part of a school project, I first created a rock-paper-scissors game in console mode to explore the logic of structured programming. The player faces a machine that randomly selects between "Rock," "Paper," and "Scissors." Later, I added a visual interface to make the game more interactive, with images representing each choice and a graphical display of the results.</p>
                     <?php endif ?>
-                    <!-- <a href="https://github.com/benjaminlrl/2024_memory_tp">En savoir <i class="fa-solid fa-plus"></i></a> -->
-                </div>                
+                    <a href="https://github.com/benjaminlrl/2024_memory_tp">En savoir <i class="fa-solid fa-plus"></i></a>
+                </div>
             </div>
             <div class="container-projet">
                 <div class="img-projet projetChiffoumiConsole"></div>
@@ -132,8 +129,8 @@ require 'head.php';
                     <?php if($langue === "english"): ?>
                     <p>Creating a rock-paper-scissors game in console with C# involves implementing the rules of the game using user inputs and random choices for the computer. The game displays the results of each round and declares a winner based on the scores, while using loops and conditions to manage the game logic.</p>
                     <?php endif ?>
-                    <!-- <a href="https://github.com/benjaminlrl/2024_memory_tp">En savoir plus <i class="fa-solid fa-arrow-right"></i></a> -->
-                </div>                
+                    <a href="https://github.com/benjaminlrl/2024_memory_tp">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
             </div>
             <div class="container-projet">
                 <div class="img-projet ProjetExceptionalCarsMai2024"></div>
@@ -152,8 +149,8 @@ require 'head.php';
                     <?php if($langue === "english"): ?>
                     <p>Creating a simple blog page in HTML and CSS involves designing a basic structure that includes a header, a section for the content of the articles, and a footer. In HTML, elements like are used to organize the page. CSS is applied to style the page, such as arranging the articles, adding colors, and selecting fonts. Users can then view a functional and aesthetically pleasing blog with a clear layout for reading the articles.</p>
                     <?php endif ?>
-                    <!-- <a href="https://github.com/benjaminlrl/2024_memory_tp">En savoir plus <i class="fa-solid fa-arrow-right"></i></a> -->
-                </div>                
+                    <a href="https://github.com/benjaminlrl/2024_memory_tp">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
             </div>
             <div class="container-projet">
                 <div class="img-projet ProjetreseauSocialAvril2024"></div>
@@ -172,8 +169,8 @@ require 'head.php';
                     <?php if($langue === "english"): ?>
                     <p>Creating a simple blog page in HTML and CSS involves designing a basic structure that includes a header, a section for the content of the articles, and a footer. In HTML, elements like are used to organize the page. CSS is applied to style the page, such as arranging the articles, adding colors, and selecting fonts. Users can then view a functional and aesthetically pleasing blog with a clear layout for reading the articles.</p>
                     <?php endif ?>
-                    <!-- <a href="https://github.com/benjaminlrl/2024_memory_tp">En savoir plus <i class="fa-solid fa-arrow-right"></i></a> -->
-                </div>                
+                    <a href="https://github.com/benjaminlrl/2024_memory_tp">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
             </div>
             <div class="container-projet">
                 <div class="img-projet ProjetBlogMars2024"></div>
@@ -192,8 +189,8 @@ require 'head.php';
                     <?php if($langue === "english"): ?>
                     <p>Creating a simple blog page in HTML and CSS involves designing a basic structure that includes a header, a section for the content of the articles, and a footer. In HTML, elements like are used to organize the page. CSS is applied to style the page, such as arranging the articles, adding colors, and selecting fonts. Users can then view a functional and aesthetically pleasing blog with a clear layout for reading the articles.</p>
                     <?php endif ?>
-                    <!-- <a href="https://github.com/benjaminlrl/2024_memory_tp">En savoir plus <i class="fa-solid fa-arrow-right"></i></a> -->
-                </div>                
+                    <a href="https://github.com/benjaminlrl/2024_memory_tp">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
             </div>
             
     </section>

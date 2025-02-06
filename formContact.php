@@ -1,7 +1,7 @@
-<?php 
+<?php
 require 'sessionStart.php';
-$titlePage='Me contacter' ?>
-<?php require 'head.php';?>
+$titlePage='Me contacter';
+require 'head.php';?>
 <body class="body-meContacter">
 <section class="section-meContacter" id="section-meContacter">
 <?php require 'header.php';?>
@@ -11,7 +11,7 @@ $titlePage='Me contacter' ?>
                 <h1>Me contacter</h1>
                 <div class="container-input-box-meContacter">
                     <div class="input-box-meContacter email">
-                        <input type="email" name="email" placeholder="votre@email.fr" value="<?php if(isset($_SESSION["user_email"])) echo($_SESSION["user_email"])?>" required>
+                        <input type="email" name="email" placeholder="votre@email.fr" value="<?php if(isset($_SESSION["user_email"])){echo $_SESSION["user_email"];}?>" required>
                         <i class="fa-solid fa-user" style="color: #fff;"></i>
                     </div>
                     <div class="input-box-meContacter username">
@@ -31,5 +31,5 @@ $titlePage='Me contacter' ?>
             </form>
         </div>
     </main>
-</section> 
+</section>
 <?php require 'footer.php';?>

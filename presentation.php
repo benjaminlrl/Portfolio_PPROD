@@ -18,7 +18,7 @@
                         <i class="fa-solid fa-pen-line fa-flip-horizontal"></i>
                         <h3>Introduction</h3>
                     </div>
-                    <p>My name is <span class='important'>Benjamin Lorieul</span>, an <span class="important">apprentice employee</span> at the <a href="#"><span class='important'>Ministry of the Armed Forces</span> / <span class='important'>DRHAT</span></a> in Tours.</p><br>                    
+                    <p>My name is <span class='important'>Benjamin Lorieul</span>, an <span class="important">apprentice employee</span> at the <a href="#"><span class='important'>Ministry of the Armed Forces</span> / <span class='important'>DRHAT</span></a> in Tours.</p><br>
                     <p>I love coding projects, building applications, and creating algorithms to solve various problems.</p><br>
                     <p>I mainly focus on developing <span class='important'>websites</span> as well as <span class='important'>software solutions and applications</span>.</p><br>
                     <p>I started as a self-taught developer with <span class='important'>HTML5, CSS, and PHP</span>, and today I am a first-year student in a <span class='important'>BTS SIO SLAM apprenticeship</span> in Tours.</p><br>
@@ -26,5 +26,5 @@
                 <?php endif ?>
             </div>
         </div>
-        <div class="icone-down"><a href="#section-parcours"><i class="fa-solid fa-arrow-down fa-bounce fa-2xl"></i></a></div>        
+        <div class="icone-down"><a href="#section-parcours"><i class="fa-solid fa-arrow-down fa-bounce fa-2xl"></i></a></div>
     </section>

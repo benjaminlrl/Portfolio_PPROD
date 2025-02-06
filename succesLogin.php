@@ -11,7 +11,7 @@ if ($langue === 'english') {
     $messageBouton = "Home";
 }?>
 <head>
-    <meta http-equiv="refresh" content="<?php echo $delay; ?>;url=index.php">
+    <meta http-equiv="refresh" content="<?php echo $delay; ?>" url="index.php">
 </head>
 <body class="body-login">
 <section class='section-succesInscription' id='section-succesInscription'>

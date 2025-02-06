@@ -1,18 +1,19 @@
-<?php require "sessionStart.php";?>
-<?php if(!isset($_SESSION["user_email"])){
-    if($langue === "français") $title="Se connecter";
-    if($langue === "english")$title="Login";
+<?php require 'sessionStart.php';
+    if(!isset($_SESSION["user_email"])){
+    if($langue === "français") {$title="Se connecter";}
+    if($langue === "english"){$title="Login";}
     $titlePage= $title;
 }else{
-    if($langue === "français") $title="Se déconnecter";
-    if($langue === "english")$title="Logout";
-    $titlePage= $title;}?>
-<?php require "head.php";?>
+    if($langue === "français"){ $title="Se déconnecter";}
+    if($langue === "english"){$title="Logout";}
+    $titlePage= $title;
+}
+require 'head.php' ;?>
 <body class="body-login">
 
 <section class='section-login' id='section-login'>
-    <?php require 'header.php';?>
-    <?php if(!isset($_SESSION["user_email"])): ?>
+    <?php require 'header.php';
+    if(!isset($_SESSION["user_email"])): ?>
         <main class='login-main'>
             <div class='wrapper-login'>
                 <form action='submitLogin.php' method='POST'>
@@ -26,11 +27,6 @@
                             <input type='password' placeholder='password' name='user_password'required>
                             <i class='fa-solid fa-lock-keyhole' style='color: #fff;'></i>
                         </div>
-
-                        <!-- <div class='remember-forgot-login'>
-                            <label><input type='checkbox'>Se souvenir de moi</label>
-                            <a href='#'>Mot de passe oublié ?</a>
-                        </div> -->
                         <button type='submit'class='btn-submit-login'>Se connecter<i class='fa-solid fa-right-to-bracket'></i></button>
 
                         <div class='register-link-login'>
@@ -40,7 +36,7 @@
                     <?php if($langue ==="english"): ?>
                         <h1>Login</h1>
                         <div class='input-box-login'>
-                            <input type='email' placeholder='exemple@domain.com' name='user_email'  value="<?php if(isset($_SESSION['bul_email']))echo $_SESSION['bul_email'];?>" required>
+                            <input type='email' placeholder='exemple@domain.com' name='user_email'  value="<?php if(isset($_SESSION['bul_email'])){echo $_SESSION['bul_email'];}?>" required>
                             <i class='fa-solid fa-user' style='color: #fff;'></i>
                         </div>
                         <div class='input-box-login'>
@@ -61,7 +57,7 @@
                 </form>
             </div>
         </main>
-</section> 
+</section>
 <?php else: ?>
     <main class='login-main'>
         <div class='wrapper-login'>
@@ -84,11 +80,11 @@
             <?php endif; ?>
             </form>
         </div>
-    </main> 
+    </main>
 <?php endif; ?>
-</section> 
+</section>
 
-<?php require "footer.php";?>
+<?php require 'footer.php';?>
 
 
 <div class="footer">
@@ -102,11 +98,17 @@
         <ul class="footer__links">
           <li>
             <?php if(isset($_SESSION['user_email'])) : ?>
-            <a href='formContact.php' class='footer__link'><?php if($langue === "français")echo("Me contacter</a>");if($langue === "english")echo("Contact me"); ?>
+            <a href='formContact.php' class='footer__link'>
+                <?php
+                if($langue === "français"){echo"Me contacter";}
+                if($langue === "english"){echo"Contact me";} ?>
+                </a>
             <?php endif; ?>
           </li>
           <li>
-            <a href='doc/02012025_CV_Benjamin_Lorieul.pdf' target='_blank' class='footer__link'><?php if($langue === "français")echo("Mon CV <i class='fa-regular fa-arrow-up-right-from-square'></i></a>");if($langue === "english")echo("My CV <i class='fa-regular fa-arrow-up-right-from-square'></i></a>");?>
+            <a href='doc/02012025_CV_Benjamin_Lorieul.pdf' target='_blank' class='footer__link'>
+                <?php if($langue === "français"){echo"Mon CV <i class='fa-regular fa-arrow-up-right-from-square'></i></a>";}
+                    if($langue === "english"){echo"My CV <i class='fa-regular fa-arrow-up-right-from-square'></i></a>";}?>
           </li>
           <li>
               <a href="https://www.iscb.fr/" class="footer__link" target="_blank" >iscb.fr <i class='fa-regular fa-arrow-up-right-from-square'></i></a>
@@ -125,10 +127,10 @@
           </a>
           <a href="https://www.strava.com/athletes/125066471" target="_blank" class="footer__social">
             <i class="fa-brands fa-strava"></i>
-          </a>  
+          </a>
         </div>
       </div>
-    <p class="footer__copy"><?php if($langue === "français")echo("Fait avec passion | 2025 Benjamin Lorieul");if($langue === "english")echo("Made with love | 2025 Benjamin Lorieul")?></p>
+    <p class="footer__copy"><?php if($langue === "français"){echo"Fait avec passion | 2025 Benjamin Lorieul";}if($langue === "english"){echo"Made with love | 2025 Benjamin Lorieul";}?></p>
   </div>
 </div>
 </body>

@@ -1,5 +1,4 @@
-
-        <!-- MAIN -->
+<!-- MAIN -->
 <div class="main-accueil">
     <?php if($langue === "français"): ?>
         <h2>bonjour&nbsp;! <i class="fa-thin fa-hand-wave" style="color: #ffffff;"></i><br>je suis Benjamin</h2>
@@ -10,14 +9,14 @@
     <?php endif; ?>
     <div class="icone-down">
         <a href="#section-presentation"><i class="fa-solid fa-arrow-down fa-bounce fa-2xl"></i></a>
-    </div>        
+    </div>
 </div>
 <script src="script.js"></script>
 <script>
     const animatedTextElement = document.getElementById("animatedText");
     if (animatedTextElement) {
-        const textList = <?php echo $langue === "français" ? 
-            '["Étudiant en alternance...", "Athlète pour FreeRunAthlé37..."]' : 
+        const textList = <?php echo $langue === "français" ?
+            '["Étudiant en alternance...", "Athlète pour FreeRunAthlé37..."]' :
             '["I am an apprentice developer.", "Check out my portfolio!"]'; ?>;
 
         setTimeout(() => {

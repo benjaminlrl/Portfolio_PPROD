@@ -4,7 +4,7 @@ if (isset($_GET['langue'])) {
     $langue = htmlspecialchars($_GET['langue']); // Sécurisation de la donnée
 }
 ?>
-<?php 
+<?php
 $titlePage = 'Benjamin Lorieul';
 require 'head.php';
 ?>
@@ -12,10 +12,10 @@ require 'head.php';
 <section class="section-accueil" id="section-accueil" style="<?= $sectionStyle; ?>">
 <?php require 'header.php';?>
 <?php require 'accueil.php';?>
-</section> 
+</section>
 <div class="icone-up">
     <i class="fa-solid fa-arrow-up fa-bounce fa-2xl"></i>
-</div>      
+</div>
 <?php require 'presentation.php';?>
 <?php require 'parcours.php';?>
 <?php require 'competences.php';?>

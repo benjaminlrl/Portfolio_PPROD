@@ -1,16 +1,14 @@
 <?php require 'sessionStart.php';?>
-<?php 
+<?php
 if (isset($_GET['langue'])) {
     $langue = htmlspecialchars($_GET['langue']); // Sécurisation de la donnée
 }
-?>
-<?php 
 $titlePage = 'A propos de moi';
 require 'head.php';
 ?>
 <body class="body-projets">
 <?php require 'header.php'?>
-    <section class="section-main-experiences">  
+    <section class="section-main-experiences">
             <div class="container-experiences">
         <?php if (!isset($_SESSION['user_email'])): ?>
                 <div class="succesInscription">
@@ -18,8 +16,8 @@ require 'head.php';
                     <p>Se connecter pour pouvoir accéder à ces informations</p>
                     </div>
                     <a href="login.php" class="btnRedirection">Se connecter</a>
-                </div> 
-        <?php endif; ?> 
+                </div>
+        <?php endif; ?>
         <?php if(isset($_SESSION['user_group']) && ($_SESSION['user_group']) === "admin"): ?>
             <div class="presentation-entreprise">
                 <h3>minstère des Armées / <span>D</span>irection des <span>R</span>essources <span>H</span>umaine de l'<span>A</span>rmée de <span>T</span>erre</h3>
@@ -37,12 +35,12 @@ require 'head.php';
                                 <div class="icone-experience icone-competence-experience_3"></div>
                                 <div class="icone-experience icone-competence-experience_4"></div>
                                 <div class="icone-experience icone-competence-experience_5"></div>
-                            </div>                            
-                        </div>                        
+                            </div>
+                        </div>
                         <span class="nouvelle-version"> Version<br>Futur<i class="fa-regular fa-arrow-right"></i></span>
                     </div>
                 </div>
-            </div> 
-        <?php endif; ?> 
+            </div>
+        <?php endif; ?>
     </section>
 <?php require 'footer.php';?>

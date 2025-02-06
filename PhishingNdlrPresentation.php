@@ -1,10 +1,7 @@
-<?php require 'sessionStart.php';?>
-<?php 
+<?php require 'sessionStart.php';
 if (isset($_GET['langue'])) {
     $langue = htmlspecialchars($_GET['langue']); // Sécurisation de la donnée
 }
-?>
-<?php 
 $titlePage = 'A propos de moi';
 require 'head.php';
 ?>
@@ -25,7 +22,7 @@ require 'head.php';
                     <p>As part of a school project, I first created a rock-paper-scissors game in console mode to explore the logic of structured programming. The player faces a machine that randomly selects between "Rock," "Paper," and "Scissors." Later, I added a visual interface to make the game more interactive, with images representing each choice and a graphical display of the results</p>
                     <?php endif ?>
                     <a href="https://github.com/benjaminlrl/2024_memory_tp">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
-                </div>                
+                </div>
             </div>
     </section>
 <?php require 'footer.php' ?>

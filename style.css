@@ -353,6 +353,7 @@ header{
 .title-presentation i{
     font-size: 40px;
     background: linear-gradient(#7c00c4, #fa67ff 100%);
+    background-clip: text;
     -webkit-background-clip: text; 
     color: transparent;
 }
@@ -459,6 +460,7 @@ header{
 .title-langue i{
     font-size: 60px;
     background: linear-gradient(0.25turn, #7c00c4, #fa67ff 100%);/* Dégradé */
+    background-clip: text;
     -webkit-background-clip: text;  /* Appliquer le dégradé au texte */
     color: transparent;
 }
@@ -471,6 +473,7 @@ header{
     margin-bottom: 5px;
     font-size: 35px;
     background: linear-gradient(#7c00c4, #ffaf47 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -519,6 +522,7 @@ header{
     margin-right: 10px;
     font-size: 30px;
     background: linear-gradient(#7c00c4, #fa67ff 100%);
+    background-clip: text;
     -webkit-background-clip: text; 
     color: transparent;    
 }

@@ -1,6 +1,6 @@
 <?php
 require 'sessionStart.php';
-require_once 'config.php';
+require 'config.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Vérifier que les champs sont définis et non vides

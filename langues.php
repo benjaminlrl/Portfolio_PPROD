@@ -3,10 +3,8 @@
         <div class="container-langues">
             <div class="title-langue">
                 <i class="fa-solid fa-language"></i>
-                <?php if($langue === "français")echo('
-                <h3>Langues</h3>');
-                    if($langue === "english")echo('
-                <h3>Languages</h3>')?>
+                <?php if($langue === "français"){echo'<h3>Langues</h3>';}
+                    if($langue === "english"){echo'<h3>Languages</h3>';}?>
             </div>
             <div class="competences">
                 <div class="langue">
@@ -37,9 +35,9 @@
                         <circle r="90" cx="100" cy="100" stroke="url(#gradient)" stroke-width="25px" stroke-linecap="round" fill="transparent" stroke-dasharray="565.48px" stroke-dashoffset="226px"></circle>
                         <image href="img/Spain_Flag.jpg" x="50" y="45" height="100px" width="100px" style="transform:rotate(90deg) translate(0px, -196px)" clip-path="url(#roundedImage)"></image>
                     </svg>
-                    <p>B1+</p>                
+                    <p>B1+</p>
                 </div>
             </div>
-        <div class="icone-down"><a href="#section-certification"><i class="fa-solid fa-arrow-down fa-bounce fa-2xl"></i></a></div>        
+        <div class="icone-down"><a href="#section-certification"><i class="fa-solid fa-arrow-down fa-bounce fa-2xl"></i></a></div>
         </div>
     </section>

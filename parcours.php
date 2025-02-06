@@ -1,4 +1,4 @@
-    <!-- PARCOURS -->
+<!-- PARCOURS -->
     <section class="section-parcours" id="section-parcours" >
         <div class="container-parcours">
             <?php if ($langue === "français"): ?>
@@ -6,17 +6,17 @@
                 <div class='title-parcours'>
                     <i class='fa-solid fa-graduation-cap'></i>
                     <h3>Parcours</h3>
-                </div> 
+                </div>
                 <div class='formation'>
                     <i class='fa-solid fa-spinner'></i>
                     <h4 class='etablissement'>CFA ISCB</h4>
                     <p><span class='important'>BTS SIO SLAM</span> à l'école ISCB - Je suis en alternance pour le <span class='important'>ministère des armées </span> / <span class='important'>DRHAT</span>. J'ai choisi l'option <span class='important'>SLAM</span> afin de concrétiser le lancement de mon projet d'avenir, devenir un des meilleurs <span class='important'>développeur web</span>. Tout en gagnant de l'expérience professionelle, je suis cette formation de 2 ans qui va me permettre d'acquérir de nombreuses <span class='important'>qualités professionelles et techniques</span>.</p>
-                </div>          
+                </div>
                 <div class='formation'>
                     <i class='fa-regular fa-award'></i>
                     <h4 class='etablissement'>Lycée Tours Fondettes Agrocampus </h4>
                     <p>Cursus de <span class='important'>BAC général</span> dans le lycée Tours Fondettes Agrocampus avec l'optention du baccalauréat général avec mention <span class='important'>Assez Bien</span> avec les spécialités Mathématiques, Biologie-Écologie et Physique-chimie.</p>
-                </div>                
+                </div>
                 <div class='formation'>
                     <i class='fa-sharp fa-solid fa-lightbulb-gear'></i>
                     <h4 class='etablissement'>Devenir</h4>
@@ -47,6 +47,6 @@
                 </div>
             </div>
             <?php endif ?>
-        <div class="icone-down"><a href="#section-competences"><i class="fa-solid fa-arrow-down fa-bounce fa-2xl"></i></a></div>        
+        <div class="icone-down"><a href="#section-competences"><i class="fa-solid fa-arrow-down fa-bounce fa-2xl"></i></a></div>
         </div>
     </section>

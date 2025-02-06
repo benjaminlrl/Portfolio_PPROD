@@ -1,4 +1,3 @@
-
 <div class="footer">
   <div class="content">
       <div class="container">
@@ -10,7 +9,7 @@
         <ul class="footer__links">
           <li>
             <a href='formContact.php' class='footer__link'>
-                <?php 
+                <?php
                     if ($langue === "français") {
                         echo "Me contacter";
                     } elseif ($langue === "english") {
@@ -22,8 +21,8 @@
           <?php if(isset($_SESSION['user_group']) && $_SESSION['user_group'] === "admin") :?>
           <li>
             <a href='doc/02012025_CV_Benjamin_Lorieul.pdf' target='_blank' class='footer__link'>
-              <?php if($langue === "français") echo("Mon CV")?>
-              <?php if($langue === "english") echo("My CV ") ?> 
+              <?php if($langue === "français"){ echo"Mon CV ";}?>
+              <?php if($langue === "english"){ echo"My CV ";} ?>
             <i class='fa-regular fa-arrow-up-right-from-square'></i></a>
           </li>
           <?php endif ?>
@@ -44,10 +43,13 @@
           </a>
           <a href="https://www.strava.com/athletes/125066471" target="_blank" class="footer__social">
             <i class="fa-brands fa-strava"></i>
-          </a>  
+          </a>
         </div>
       </div>
-    <p class="footer__copy"><?php if($langue === "français")echo("Fait avec passion | 2025 Benjamin Lorieul");if($langue === "english")echo("Made with love | 2025 Benjamin Lorieul")?></p>
+    <p class="footer__copy">
+      <?php if($langue === "français"){echo"Fait avec passion | 2025 Benjamin Lorieul";}
+      if($langue === "english"){echo"Made with love | 2025 Benjamin Lorieul";}?>
+    </p>
   </div>
 </div>
 </body>

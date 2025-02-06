@@ -1,5 +1,5 @@
 <?php require 'sessionStart.php';?>
-<?php 
+<?php
 if (isset($_GET['langue'])) {
     $langue = htmlspecialchars($_GET['langue']); // Sécurisation de la donnée
 }
@@ -12,7 +12,6 @@ require 'head.php';
 <?php require 'header.php'?>
     <section class="section-main-portefeuilledecompetences">
             <div class="container-portefeuilledecompetences">
-                
-            </div>           
+            </div>
     </section>
 <?php require 'footer.php';?>

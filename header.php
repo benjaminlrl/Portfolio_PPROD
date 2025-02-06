@@ -10,7 +10,7 @@
         <?php if ($langue === "français"):?>
                 <div class='items-link'>
                     <a href='projets.php' class='item-link nav-link drop3'>Projets</a>
-                <?php if (isset($_SESSION['user_email'])): ?>                    
+                <?php if (isset($_SESSION['user_email'])): ?>
                     <a href='portefeuilledecompetences.php' class='item-link nav-link drop3'>Portefeuille de compétences</a>
                 <?php endif ?>
                     <a href='experiences.php' class='item-link nav-link drop3'>Expériences professionnelles</a>
