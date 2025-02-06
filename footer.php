@@ -10,9 +10,9 @@
           <li>
             <a href='formContact.php' class='footer__link'>
                 <?php
-                    if ($langue === "français") {
+                    if ($langue === "fr") {
                         echo "Me contacter";
-                    } elseif ($langue === "english") {
+                    } elseif ($langue === "en") {
                         echo "Contact me";
                     }
                 ?>
@@ -21,8 +21,8 @@
           <?php if(isset($_SESSION['user_group']) && $_SESSION['user_group'] === "admin") :?>
           <li>
             <a href='doc/02012025_CV_Benjamin_Lorieul.pdf' target='_blank' class='footer__link'>
-              <?php if($langue === "français"){ echo"Mon CV ";}?>
-              <?php if($langue === "english"){ echo"My CV ";} ?>
+              <?php if($langue === "fr"){ echo"Mon CV ";}?>
+              <?php if($langue === "en"){ echo"My CV ";} ?>
             <i class='fa-regular fa-arrow-up-right-from-square'></i></a>
           </li>
           <?php endif ?>
@@ -47,8 +47,8 @@
         </div>
       </div>
     <p class="footer__copy">
-      <?php if($langue === "français"){echo"Fait avec passion | 2025 Benjamin Lorieul";}
-      if($langue === "english"){echo"Made with love | 2025 Benjamin Lorieul";}?>
+      <?php if($langue === "fr"){echo"Fait avec passion | 2025 Benjamin Lorieul";}
+      if($langue === "en"){echo"Made with love | 2025 Benjamin Lorieul";}?>
     </p>
   </div>
 </div>

@@ -9,7 +9,7 @@
     <main class='login-main'>
         <div class='wrapper-login'>
             <form action='submitInscription.php' method='POST' id='registerForm'>
-                <?php if($langue === "français"): ?>
+                <?php if($langue === "fr"): ?>
                 <h1>S'inscrire</h1>
                 <div class='input-box-login'>
                     <input type='email' placeholder='exemple@domain.com' name='user_email' required id='user_email'>
@@ -26,7 +26,7 @@
                     <p id='password-error' style='color: red; display: none;'>Les mots de passes ne correspondent pas.</p>
                     <button type='submit'class='btn-submit-login'>Sign up</button>
                 <?php endif ?>
-                <?php if($langue === "english"): ?>
+                <?php if($langue === "en"): ?>
                 <h1>Sign up</h1>
                 <div class='input-box-login'>
                     <input type='email' placeholder='exemple@domain.com' name='user_email' required id='user_email'>

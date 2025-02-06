@@ -7,7 +7,7 @@ if (isset($_GET['langue'])) {
 }
 
 if (!isset($_SESSION['langue'])) {
-    $_SESSION['langue'] = 'français';
+    $_SESSION['langue'] = 'fr';
 }
 
 $langue = $_SESSION['langue'];

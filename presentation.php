@@ -2,7 +2,7 @@
 <section class="section-presentation" id="section-presentation" style="<?= $sectionStyle; ?>">
         <div class="container-presentation">
             <div class="presentation">
-                <?php if($langue === "français"): ?>
+                <?php if($langue === "fr"): ?>
                     <div class='title-presentation'>
                         <i class="fa-solid fa-pen-line fa-flip-horizontal"></i>
                         <h3>Présentation</h3>
@@ -13,7 +13,7 @@
                     <p>J'ai débuté en auto-didacte avec <span class='important'>HTML5, CSS et PHP</span> et je suis aujourd'hui étudiant en 1ère année de <span class='important'>BTS SIO SLAM en Alternance</span> dans la ville de Tours.</p><br>
                     <p>À côté de tous cela, je pratique la <span class='important'>courses à pied</span> avec le club d'athlétisme <span class='important'>FreeRunAthlé37</span> à Tours. Avec un BTS en alternance et de 8 à 13 heures de sports par semaines, <span class='important'>la discipline n'est plus une option</span> pour devenir la personne que je rêve d'être.</p>
                 <?php endif ?>
-                <?php if($langue === "english"): ?>
+                <?php if($langue === "en"): ?>
                     <div class='title-presentation'>
                         <i class="fa-solid fa-pen-line fa-flip-horizontal"></i>
                         <h3>Introduction</h3>

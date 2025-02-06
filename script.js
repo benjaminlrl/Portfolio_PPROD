@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Vérifier le mode actuel stocké dans localStorage
     if (localStorage.getItem('theme') === 'light') {
         document.body.classList.add('light-mode');
-        icon.classList.replace('fa-moon', 'fa-sun-bright'); // 🌙 → ☀️
+        icon.classList.replace('fa-moon', 'fa-sun-bright');
     }
 
     // Ajouter un événement au clic
@@ -122,10 +122,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (document.body.classList.contains('light-mode')) {
             localStorage.setItem('theme', 'light');
-            icon.classList.replace('fa-moon', 'fa-sun-bright'); // Changer icône en ☀️
+            icon.classList.replace('fa-moon', 'fa-sun-bright');
         } else {
             localStorage.setItem('theme', 'dark');
-            icon.classList.replace('fa-sun-bright', 'fa-moon'); // Changer icône en 🌙
+            icon.classList.replace('fa-sun-bright', 'fa-moon');
         }
     });
 });

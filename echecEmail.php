@@ -1,11 +1,11 @@
 <?php require "sessionStart.php";?>
 <?php $delay = 5000;?>
-<?php if($langue === "français"){
+<?php if($langue === "fr"){
     $echecMessage = "Echec de l'envoie de l'email veuillez réessayer.";
     $title="Echec de l'envoie de l'email";
     $messageBouton ="Recommencer";
 }
-if($langue === "english"){
+if($langue === "en"){
     $echecMessage = "Error, email was not sent, please try again. ";
     $title="Error, email sent.";
     $messageBouton ="Try again";

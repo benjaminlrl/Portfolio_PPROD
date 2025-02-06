@@ -1,11 +1,11 @@
 <?php require "sessionStart.php";?>
 <?php $delay = 5000;?>
-<?php if($langue === "français"){
+<?php if($langue === "fr"){
     $succesEnvoieMessage = "Votre message à bien était envoyé, je répondrais dès que possible !";
     $title="Email envoye avec succes";
     $messageBouton ="Accueil";
 }
-if($langue === "english"){
+if($langue === "en"){
     $succesEnvoieMessage = "Your message has been succesfully sent, I'll respond you as soon as possible !.";
     $title="Email sent with succes";
     $messageBouton ="Home";

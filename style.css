@@ -147,12 +147,18 @@ header{
 .theme-toggle i{
     color: var(--color);
     font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle i:hover{
+    cursor: pointer;
+    color: var(--troisiemeCouleur);
 }
 
 .theme-toggle{
     border: none;
     background-color: transparent;
-    transition: color 0.3s ease;
+    transition: 0.3s ease;
 }
 
 @media (max-width: 1250px) {
@@ -330,7 +336,6 @@ header{
     font-weight: 700;
     font-family: "Zen Dots", sans-serif;
     text-align: center;
-    text-shadow: #3636367e 0 0 10px;
 }
 
 .main-status{
@@ -620,6 +625,7 @@ header{
     border-radius: 5px;
     box-shadow: var(--box-shadow-card) 0 0 5px;
     backdrop-filter: blur(10px);
+    border: var(--color) 1px solid;
 }
 
 @media screen and (min-width: 900px){
@@ -1424,7 +1430,7 @@ header{
     color: var(--color);
     border-radius: 10px;
     padding: 40px 50px;
-    border: 2px solid rgba(255, 255, 255, 0.807);
+    border: 2px solid var(--color);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 10px  rgba(0, 0, 0, .2);
     font-family: 'Poppins', sans-serif;
@@ -1439,7 +1445,7 @@ header{
     color: var(--color);
     border-radius: 10px;
     padding: 40px 50px;
-    border: 2px solid rgba(255, 255, 255, 0.807);
+    border: 2px solid var(--color);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 10px  rgba(0, 0, 0, .2);
     font-family: 'Poppins', sans-serif;
@@ -1460,7 +1466,7 @@ header{
 .succesDeconnexion a,
 .succesInscription a,
 .echecConnexion a{
-    border: 2px solid #fff;
+    border: 2px solid var(--color);
     border-radius: 55px;
     padding: 8px 16px;
     font-weight: 500;
@@ -1472,7 +1478,7 @@ header{
 .succesDeconnexion a:hover,
 .succesInscription a:hover,
 .echecConnexion a:hover{
-    color: var(--color);
+    background: var(--color);
     color: var(--troisiemeCouleur);
 }
 
@@ -1620,7 +1626,7 @@ header{
 }
 
 .btn-submit-meContacter:hover{
-    background-color: #fff;
+    background-color: var(--color);
     color: var(--troisiemeCouleur);
 }
 
@@ -1645,7 +1651,7 @@ textarea {
 
 .input-box-meContacter input:focus,
 textarea:focus {
-    border-color: #ffffff;
+    border-color: var(--troisiemeCouleur);
     outline: none;
 }
 
@@ -2005,7 +2011,7 @@ ul li {
     align-items: center;
     justify-content: center;
     padding: 15vh 0;
-    color: #FFF;
+    color: var(--color);
 }
 
 .presentation-entreprise{
@@ -2046,6 +2052,7 @@ ul li {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    color: var(--color);
 }
 
 .experience .ancien-site{

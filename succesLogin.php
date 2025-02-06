@@ -2,11 +2,11 @@
 <?php $titlePage="Se connecter"?>
 <?php require "head.php";?>
 <?php $delay = 3;
-if($langue === 'français') {
+if($langue === 'fr') {
     $message = "Vous êtes bien connecté !";
     $messageBouton = "Accueil";
 }
-if ($langue === 'english') {
+if ($langue === 'en') {
     $message = "You have successfully logged in !";
     $messageBouton = "Home";
 }?>

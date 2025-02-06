@@ -3,14 +3,14 @@
         <div class="container-competences">
             <div class="title-competences">
                 <i class="fa-solid fa-code"></i>
-                <?php if($langue === "français"){echo'<h3>Compétences</h3>';}
-                    if($langue === "english"){echo '<h3>Skills</h3>';}?>
+                <?php if($langue === "fr"){echo'<h3>Compétences</h3>';}
+                    if($langue === "en"){echo '<h3>Skills</h3>';}?>
             </div>
             <!-- Langages -->
                 <div class="title-souscompetences">
                     <i class="fa-solid fa-brackets-curly"></i>
-                    <?php if($langue === "français"){echo'<h3>Langages</h3>';}
-                        if($langue === "english"){echo'<h3>Languages</h3>';}?>
+                    <?php if($langue === "fr"){echo'<h3>Langages</h3>';}
+                        if($langue === "en"){echo'<h3>Languages</h3>';}?>
                 </div>
                 <div class="competence-wrapper">
                     <div class="competence">
@@ -47,8 +47,8 @@
                 <!-- Outils -->
                 <div class="title-souscompetences">
                     <i class="fa-regular fa-toolbox"></i>
-                    <?php if($langue === "français"){echo'<h3>Outils</h3>';}
-                        if($langue === "english"){echo'<h3>Tools</h3>';}?>
+                    <?php if($langue === "fr"){echo'<h3>Outils</h3>';}
+                        if($langue === "en"){echo'<h3>Tools</h3>';}?>
                 </div>
                 <div class="competence-wrapper">
                     <div class="competence">

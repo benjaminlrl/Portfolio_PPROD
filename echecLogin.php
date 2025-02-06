@@ -1,11 +1,11 @@
 <?php require "sessionStart.php";?>
 <?php $delay = 5000;?>
-<?php if($langue === "français"){
+<?php if($langue === "fr"){
     $echecMessage = "Adresse email ou mot de passe invalide";
     $title="État connexion";
     $messageBouton ="Recommencer";
 }
-if($langue === "english"){
+if($langue === "en"){
     $echecMessage = "Invalid email or password ";
     $title="Conexion Status";
     $messageBouton ="Try again";

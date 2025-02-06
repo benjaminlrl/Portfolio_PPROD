@@ -1,11 +1,11 @@
 <?php require "sessionStart.php";?>
 <?php $delay = 5000;?>
-<?php if($langue === "français"){
+<?php if($langue === "fr"){
     $succesInscriptionMessage = "Votre inscription à bien été prise en compte.";
     $title="S'inscrire";
     $messageBouton ="Accueil";
 }
-if($langue === "english"){
+if($langue === "en"){
     $succesInscriptionMessage = "Your registration has been successfully confirmed.";
     $title="Sign up";
     $messageBouton ="Home";

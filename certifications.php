@@ -2,7 +2,7 @@
     <div class="container-certifications">
         <div class="title-certifications">
             <i class="fa-solid fa-file-certificate"></i>
-            <?php if($langue === "français"): ?>
+            <?php if($langue === "fr"): ?>
             <h3>Diplômes & Certifications</h3>
         </div>
             <div class='card-container'>

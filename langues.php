@@ -3,8 +3,8 @@
         <div class="container-langues">
             <div class="title-langue">
                 <i class="fa-solid fa-language"></i>
-                <?php if($langue === "français"){echo'<h3>Langues</h3>';}
-                    if($langue === "english"){echo'<h3>Languages</h3>';}?>
+                <?php if($langue === "fr"){echo'<h3>Langues</h3>';}
+                    if($langue === "en"){echo'<h3>Languages</h3>';}?>
             </div>
             <div class="competences">
                 <div class="langue">

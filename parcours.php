@@ -1,7 +1,7 @@
 <!-- PARCOURS -->
     <section class="section-parcours" id="section-parcours" >
         <div class="container-parcours">
-            <?php if ($langue === "français"): ?>
+            <?php if ($langue === "fr"): ?>
                 <div class='parcours'>
                 <div class='title-parcours'>
                     <i class='fa-solid fa-graduation-cap'></i>
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <?php endif ?>
-            <?php if ($langue === "english"): ?>
+            <?php if ($langue === "en"): ?>
                 <div class='parcours'>
                 <div class='title-parcours'>
                     <i class='fa-solid fa-graduation-cap'></i>
