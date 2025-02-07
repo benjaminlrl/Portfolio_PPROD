@@ -20,7 +20,7 @@
           </li>
           <?php if(isset($_SESSION['user_group']) && $_SESSION['user_group'] === "admin") :?>
           <li>
-            <a href='doc/02012025_CV_Benjamin_Lorieul.pdf' target='_blank' class='footer__link'>
+            <a href='doc/03022025_CV_Benjamin_Lorieul.pdf' target='_blank' class='footer__link'>
               <?php if($langue === "fr"){ echo"Mon CV ";}?>
               <?php if($langue === "en"){ echo"My CV ";} ?>
             <i class='fa-regular fa-arrow-up-right-from-square'></i></a>

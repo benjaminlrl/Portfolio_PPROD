@@ -9,7 +9,7 @@ $titlePage = 'Benjamin Lorieul';
 require 'head.php';
 ?>
 <body class="body-login">
-<section class="section-accueil" id="section-accueil" style="<?= $sectionStyle; ?>">
+<section class="section-accueil" id="section-accueil">">
 <?php require 'header.php';?>
 <?php require 'accueil.php';?>
 </section>

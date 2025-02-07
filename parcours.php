@@ -47,6 +47,6 @@
                 </div>
             </div>
             <?php endif ?>
-        <div class="icone-down"><a href="#section-competences"><i class="fa-solid fa-arrow-down fa-bounce fa-2xl"></i></a></div>
         </div>
+        <div class="icone-down"><a href="#section-competences"><i class="fa-solid fa-arrow-down fa-bounce fa-2xl"></i></a></div>
     </section>
