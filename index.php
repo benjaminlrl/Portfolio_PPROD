@@ -13,9 +13,6 @@ require 'head.php';
 <?php require 'header.php';?>
 <?php require 'accueil.php';?>
 </section>
-<div class="icone-up">
-    <i class="fa-solid fa-arrow-up fa-bounce fa-2xl"></i>
-</div>
 <?php require 'presentation.php';?>
 <?php require 'parcours.php';?>
 <?php require 'competences.php';?>

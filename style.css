@@ -85,24 +85,6 @@ body.light-mode {
     position: relative;
 }
 
-.icone-up {
-    position: fixed;
-    bottom: 5vh;
-    right: 5vh;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-    z-index: 1000;
-    cursor: pointer;
-    color: var(--color);
-}
-
-.icone-up.visible-icone {
-    opacity: 1;
-    visibility: visible;
-}
-
-
 .wrapper-accueil{
     width: 100%;
 }
@@ -1288,6 +1270,7 @@ header{
     height: 100vh;  
 }
 
+.section-meContacter header,
 .section-echecConnexion header,
 .section-succesInscription header,
 .section-login header{
@@ -1522,29 +1505,20 @@ header{
     height: 100vh;  
 }
 
-.section-meContacter header{
-    background-color: transparent;
-    color: var(--color);
-    height: 85px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    top: 0;
-    position: absolute;
+@media (min-width: 700px) {    
+    .wrapper-meContacter{
+        margin-top: 10vh;
+        width: 800px;
+        background-color: transparent;
+        color: var(--color);
+        border-radius: 10px;
+        padding: 30px 40px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 10px  rgba(0, 0, 0, .2);
+        font-family: 'Poppins', sans-serif;
+    }
 }
 
-.wrapper-meContacter{
-    width: 800px;
-    background-color: transparent;
-    color: var(--color);
-    border-radius: 10px;
-    padding: 30px 40px;
-    border: 2px solid var(--second-color);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 10px  rgba(0, 0, 0, .2);
-    font-family: 'Poppins', sans-serif;
-}
 
 .wrapper-meContacter h1{
     font-size: 36px;
@@ -1564,6 +1538,7 @@ header{
     justify-content: space-around;
     gap: 20px;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .input-box-meContacter.email{
@@ -1589,11 +1564,12 @@ header{
     width: 100%;
     background-color: transparent;
     outline: none;
-    border: 2px solid var(--second-color);
-    border-radius: 40px;
+    border-color: transparent;
+    border-bottom: 2px solid var(--troisiemeCouleur);
     font-size: 16px;
     color: var(--color);
     padding: 20px 45px 20px 20px;
+    transition: .3s ease-out;
 }
 
 
@@ -1618,7 +1594,6 @@ header{
 .confidentialite-check input{
     margin-right: 10px;
     accent-color: var(--troisiemeCouleur);
-
 }
 
 .btn-submit-meContacter{
@@ -1652,18 +1627,18 @@ textarea {
     height: 100%;
     padding: 20px; 
     background-color: transparent;
-    border: 2px solid var(--second-color);
-    border-radius: 15px;
+    border-color: transparent;
+    border-bottom: 2px solid var(--troisiemeCouleur);
     font-size: 16px;
     resize: none;
     color: var(--color);
     outline: none;
+    transition: .3s ease-out;
 }
 
 .input-box-meContacter input:focus,
 textarea:focus {
-    border-color: var(--troisiemeCouleur);
-    outline: none;
+    border: 2px solid var(--troisiemeCouleur);
 }
 
 
@@ -1678,7 +1653,7 @@ textarea::placeholder {
     grid-area: footer;
     min-height: 5vh;
     font-family: 'Poppins', sans-serif;
-  }
+}
   
 a {
     text-decoration: none;
@@ -1688,12 +1663,14 @@ a {
 ul li {
     list-style: none;
     color: var(--color);
-  }
+}
+
 .footer .content {
     padding: 2.6rem 0 1rem 0;
     background-color: var(--background-footer);
     z-index: 2;
-  }
+}
+
 .footer .content .container {
     max-width: 768px;
     margin: 0 auto;
@@ -1702,16 +1679,17 @@ ul li {
     grid-template-rows: auto;
     grid-gap: 1.5rem;
     color: var(--color-footer);
-  }
+}
+
 .content h2 {
     margin-bottom: .25rem;
     font-size: 2.25rem;
-  }
+}
   
 .footer__subtitle{
     font-size: 1.1rem;
     color: var(--color-footer);
-  }
+}
   
 .footer__links  {
     display: flex;
@@ -1721,7 +1699,7 @@ ul li {
     column-gap: 2rem;
     row-gap: 1rem;
     transition: all 150ms ease-out;
-  }
+}
 
 .footer_link li i{
     font-size: 15px;
@@ -1733,12 +1711,12 @@ ul li {
     transition: all 150ms ease-out;
     color: var(--color-footer);
     display: inline-block;
-  }
+}
 
 .certification_link:hover:after,
 .footer__link:hover:after {
       width: 100%;
-  }
+}
 
 .certification_link:after,
 .footer__link:after {
@@ -1749,20 +1727,22 @@ ul li {
       width: 0px;
       background-color: #fff;
       transition: width .25s ease-out;
-  }
+}
+
 .footer__socials {
     justify-self: end;
-  }
+}
   
 .footer__social {
     font-size: 1.8rem;
     margin-right: 1.5rem;
     color: var(--color-footer);
     transition: ease-in-out .3s;
-  }
+}
+
 .footer__social:hover {
-    color: var(--color);
-  }
+    color: #100f25;
+}
   
 .footer__copy {
     text-align: center;
@@ -1772,7 +1752,7 @@ ul li {
     color: var(--color-footer);
     padding: 3rem 0 2rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .footer .content .container {
         grid-template:
         "label"
@@ -1792,221 +1772,39 @@ ul li {
     .footer__label{
         justify-self: center;
     }
-  }
-/* Apropos */
-
-.section-main-apropos{
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20vh;
-    background-color: var(--background);
-    color: #FFF;
-  }
-
-  .grid-container-apropos {
-    margin: auto;
-    width: 80vw;
-    height: 80vh;
-    display: grid;
-    gap: 5px;
-    grid-template-areas:
-      "informatique informatique informatique"
-      "title running running"
-      "title natation velo";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr); /* Ajuste les lignes pour une meilleure distribution */
-    margin-bottom: 5vh;
-  }
-
-  .content-apropos {
-    border-radius: 10px;
-    transition: .3s ease-in-out;
-    box-shadow: #19191b 0 0 5px;
-  }
-
-  .content-apropos:hover{
-    transform: translateY(-3vh);
-  }
-  
-  .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    font-size: 3rem;
-    color: #FFF;
-    background: url(img/IMG_1230.JPEG) center center / cover no-repeat;
-    grid-area: title;
-    height: 100%;
-  }
-  
-  .title-content-vertical {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .running {
-    background: url(img/pisteAthle_Crop.jpeg) bottom center / cover no-repeat;
-    text-shadow: #000 0 0 5px;
-    grid-area: running;
-    height: 100%;
-    display: grid;
-    grid-template-areas:
-      "title chrono"
-      "km-running chrono"
-      "title-club-name chrono";
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr .5fr 1fr;
-    padding: 20px;
-    font-family: "Share Tech Mono", sans-serif;
-  }
-  
-  .title-running{
-    display: flex;
-    justify-content: flex-start;
-    font-family: 'Poppins',sans-serif;
-    align-items: end;
-    font-size: 5rem;
-    font-weight: 700;
-    grid-area: title;
-  }
-
-  .velo {
-    background: url(img/montagne.JPEG) center center / cover no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 3rem;
-    font-weight: 700;
-    grid-area: velo;
-    height: 100%; 
-  }
-
-  .natation {
-    background: url(img/montagne.JPEG) top center / cover no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    grid-area: natation;
-    height: 100%;
-  }
-
-  .informatique{
-    background: url(img/orage.JPEG) center center / cover no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    grid-area: informatique;
-    height: 100%;
-  }
-
-  .km-running{
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    grid-area: km-running;
-  }
-  
-  .chrono span,
-  .title-club-name span,
-  .km-running span{
-    margin-left: .4rem;
-    color: #ffffffb4;
-  }
-
-  .title-club-name{
-    display: flex;
-    align-items: end;
-    grid-area: title-club-name;
-  }
-
-  .chrono{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-size: 1.4rem;
-    grid-area: chrono;
-    height: 100%;
-  }
-
-  .chrono-distance{
-    display: flex;
-    align-items: baseline;
-  }
-
-  .title-club-name p,
-  .km-running p,
-  .chrono-distance p{
-    font-weight: 600;
-  }
-
-  @media (max-width: 900px) {
-    .grid-container-apropos {
-      min-height: 150vh;
-      grid-template-areas:
-        "title"
-        "running"
-        "natation"
-        "velo";
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(4, auto);
+    .section-meContacter{
+        padding-top: 20vh;
+        min-height: 110vh;
     }
-    .title-content-vertical {
-        flex-direction: row;
-      }
-    .content-apropos:hover{
-    transform: translateY(0);
+
+    .wrapper-meContacter {
+        width: 90%;
+        margin: auto;
+        height: 80vh;
+        background-color: transparent;
+        color: var(--color);
+        border-radius: 10px;
+        padding: 30px 40px;
+        backdrop-filter: blur(10px);
+        font-family: 'Poppins', sans-serif;
     }
-  }
-  @media (max-width: 1100px) {
-    .running {
-        grid-template-areas:
-        "title"
-        "km-running"
-        "chrono"
-        "title-club-name";
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr .5fr 1fr .5fr;
-    }
-    .title-running {
+
+    .wrapper-meContacter form{
+        height: 100%;
         display: flex;
         justify-content: center;
+        flex-direction: column;
         align-items: center;
     }
-    .title-content-vertical {
-        gap: 15px;
+    .input-box-meContacter.email,
+    .input-box-meContacter.username {
+        width: 100%;
     }
-  }
-  @media (max-width: 1100px) {
-    .running {
-        grid-template-areas:
-        "title"
-        "km-running"
-        "chrono"
-        "title-club-name";
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr .5fr 1fr .5fr;
-    }
-    .title-running {
+    .wrapper-meContacter .input-box-meContacter {
+        position: relative;
         display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .title-content-vertical {
-        gap: 15px;
+        justify-content: space-between;
+        margin: 10px 0;
     }
   }
   
@@ -2075,7 +1873,7 @@ ul li {
     align-items: center;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
-    color: #fff;
+    color: var(--color);
     padding: 20px;
     text-align: center;
 }
@@ -2083,7 +1881,7 @@ ul li {
 .content-experience-description{
     display: flex;
     flex-direction: column;
-    border: #fff 1px solid;
+    border: var(--color) 1px solid;
     border-radius: 10px;
     padding: 5px;
 }
@@ -2095,7 +1893,6 @@ ul li {
     width: auto;
     height: 3rem;
 }
-
 
 .icone-competence-experience_1{
     background: url(img/AlmaLinux_Logo.png) center center / contain no-repeat;
@@ -2121,7 +1918,6 @@ ul li {
     background: url(img/VirtualBox_Logo.png) center center / contain no-repeat;
     width: 50px;
 }
-
 
 .ancienne-version{
     align-self: start;
