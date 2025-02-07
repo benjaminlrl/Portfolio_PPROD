@@ -4,14 +4,14 @@ require 'config.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Vérifier que les champs sont définis et non vides
-    if (!empty($_POST['user_email']) && !empty($_POST['user_email_check']) && !empty($_POST['user_password'])) {
+    if (!empty($_POST['user_email']) && !empty($_POST['user_password']) && !empty($_POST['user_password_check'])) {
         $userEmail = trim($_POST['user_email']);
-        $userEmailCheck = trim($_POST['user_email_check']);
         $userPassword = trim($_POST['user_password']);
+        $userPasswordCheck = trim($_POST['user_password_check']);
 
         // Vérifier si les emails correspondent
-        if ($userEmail !== $userEmailCheck) {
-            echo "Les adresses email ne correspondent pas.";
+        if ($userPassword !== $userPasswordCheck) {
+            echo "Les mots de passes ne correspondent pas.";
             exit;
         }
 

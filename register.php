@@ -20,7 +20,7 @@
                     <i class='fa-solid fa-lock-keyhole' style='color: #fff;'></i>
                 </div>
                 <div class='input-box-login'>
-                    <input type='password' placeholder='password_verify' id='user_password_check' name='user_password'required>
+                    <input type='password' placeholder='password_verify' id='user_password_check' name='user_password_check'required>
                     <i class='fa-solid fa-lock-keyhole' style='color: #fff;'></i>
                 </div>
                     <p id='password-error' style='color: red; display: none;'>Les mots de passes ne correspondent pas.</p>
@@ -37,7 +37,7 @@
                     <i class='fa-solid fa-lock-keyhole' style='color: #fff;'></i>
                 </div>
                 <div class='input-box-login'>
-                    <input type='password' placeholder='password_verify' id='user_password_check' name='user_password'required>
+                    <input type='password' placeholder='password_verify' id='user_password_check' name='user_password_check'required>
                     <i class='fa-solid fa-lock-keyhole' style='color: #fff;'></i>
                 </div>
                     <p id='password-error' style='color: red; display: none;'>Les mots de passes ne correspondent pas.</p>
@@ -52,11 +52,11 @@
     // Fonction de validation du formulaire
     document.getElementById('registerForm').addEventListener('submit', function(e) {
         // Récupérer les valeurs des champs email
-        const userEmail = document.getElementById('user_password').value;
-        const userEmailCheck = document.getElementById('user_password_check').value;
+        const userPassword = document.getElementById('user_password').value;
+        const userPasswordCheck = document.getElementById('user_password_check').value;
         
         // Vérifier si les emails correspondent
-        if (userEmail !== userEmailCheck) {
+        if (userPassword !== userPasswordCheck) {
             e.preventDefault(); // Empêcher la soumission du formulaire
             document.getElementById('password-error').style.display = 'block'; // Afficher le message d'erreur
         } else {
