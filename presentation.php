@@ -8,7 +8,7 @@
                         <h3>Présentation</h3>
                     </div>
                     <p>Je m'appelle <span class='important'>Benjamin Lorieul</span>, salarié en <span class="important">alternance</span> pour le <a href="#"><span class='important'>ministère des Armées</span> / <span class='important'>DRHAT</span></a> à Tours.</p><br>
-                    <p>J'adore coder des projets, construire des applications ou créer des algorithmes pour résoudre divers problèmes.</p><br>
+                    <p>J'adore coder des <a href="projets.php"><span class="important">projets</span></a>, construire des applications ou créer des algorithmes pour résoudre divers problèmes.</p><br>
                     <p>Je suis principalement axé sur la création de <span class='important'>sites web</span> ainsi que de <span class='important'>solutions logicielles et applications</span>.</p><br>
                     <p>J'ai débuté en auto-didacte avec <span class='important'>HTML5, CSS et PHP</span> et je suis aujourd'hui étudiant en 1ère année de <span class='important'>BTS SIO SLAM en Alternance</span> dans la ville de Tours.</p><br>
                     <p>À côté de tous cela, je pratique la <span class='important'>courses à pied</span> avec le club d'athlétisme <span class='important'>FreeRunAthlé37</span> à Tours. Avec un BTS en alternance et de 8 à 13 heures de sports par semaines, <span class='important'>la discipline n'est plus une option</span> pour devenir la personne que je rêve d'être.</p>

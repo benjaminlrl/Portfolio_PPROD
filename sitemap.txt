@@ -1,0 +1,91 @@
+Acceuil(index.php)
+|    |
+|    |---Header(header.php)
+|    |
+|    |---acceuil(acceuil.php)
+|    |
+|    |---Presentation(presentation.php)
+|    |
+|    |---Parcours(parcours.php)
+|    |
+|    |---Competences(competences.php)
+|    |
+|    |---Langues(langues.php)
+|    |
+|    |---Certifications(certifications.php)
+|    |
+|    |---Footer(footer.php)
+|
+Projets(projets.php)
+|    |
+|    |---Header(header.php)
+|    |
+|    |---Portfolio
+|    |
+|    |---Memory_Game
+|    |
+|    |---TD_python
+|    |
+|    |---phishing_NDLR
+|    |    |
+|    |    |
+|    |    |---Phishing NDLR en detail(PhishingNdlrPresentation.php)
+|    |          
+|    |---Chiffoumi
+|    |
+|    |---Chiffoumi_Console
+|    |
+|    |---Flex_Cars
+|    |
+|    |---Page_de_reseau_social
+|    |
+|    |---Page_de_blog
+|    |
+|    |---Footer(footer.php)
+|    
+Experiences Professionnelles(experiences.php)
+|    |
+|    |---Header(header.php)
+|    |
+|    |---Site_web_DRHAT
+|    |
+|    |---Footer(footer.php)
+|    
+Portefeuille de competences(portefeuilledecompetences.php)
+|    |
+|    |---Header(header.php)
+|    |
+|    |---Portefeuille_de_competences
+|    |
+|    |---Footer(footer.php)
+|
+Me contacter(formContact.php)
+|    |
+|    |---Header(header.php)
+|    |
+|    |---Formulaire_de_contact
+|    |    |
+|    |    |---Succes envoie Email (succesEmail.php)
+|    |    |---Echec envoie Email (echecEmail.php)
+|    |
+|    |---Footer(footer.php)
+|
+Connexion(login.php)
+|    |
+|    |---Header(header.php)
+|    |
+|    |---Connexion
+|    |    |
+|    |    |---Succes Connexion(succesLogin.php)
+|    |    |---Echec Connexion(echecLogin.php)
+|    |
+|    |---Deconnexion
+|    |    |
+|    |    |---Succes Deconnexion(succesLogout.php)
+|    |
+|    |---Inscription(register.php)
+|    |    |
+|    |    |---Succes Inscription(succesInscription.php)
+|    |
+|    |---Footer(footer.php)
+-

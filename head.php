@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenue sur le portfolio de Benjamin Lorieul, apprenti développeur web, en alternance pour le ministère des Armées, étudiant au CFA ISCB.">
     <!-- Font Awesome -->
     <!-- <script src="https://kit.fontawesome.com/7fdcbddcda.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">

@@ -13,9 +13,17 @@ require 'head.php';
         <?php if (!isset($_SESSION['user_email'])): ?>
                 <div class="succesInscription">
                     <div class="msg-echecConnexion">
-                    <p>Se connecter pour pouvoir accéder à ces informations</p>
+                    <p>Se connecter pour pouvoir accéder à ces informations.</p>
                     </div>
                     <a href="login.php" class="btnRedirection">Se connecter</a>
+                </div>
+        <?php endif; ?>
+        <?php if ($_SESSION['user_group']!="admin"): ?>
+                <div class="succesInscription">
+                    <div class="msg-echecConnexion">
+                    <p>Vous n'avez pas les droits pour accéder à ces informations.</p>
+                    </div>
+                    <a href="index.php" class="btnRedirection">Acceuil</a>
                 </div>
         <?php endif; ?>
         <?php if(isset($_SESSION['user_group']) && ($_SESSION['user_group']) === "admin"): ?>

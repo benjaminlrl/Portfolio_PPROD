@@ -30,7 +30,7 @@ require 'head.php' ;?>
                         <button type='submit'class='btn-submit-login'>Se connecter<i class='fa-solid fa-right-to-bracket'></i></button>
 
                         <div class='register-link-login'>
-                            <p>Vous n'avez pas de compte ? <a href='register.php'><span class="important">S'inscrire</span></a></p>
+                            <p>Vous n'avez pas de compte ? <a href='inscription.php'><span class="important">S'inscrire</span></a></p>
                         </div>
                     <?php endif; ?>
                     <?php if($langue ==="en"): ?>
@@ -51,7 +51,7 @@ require 'head.php' ;?>
                         <button type='submit'class='btn-submit-login'>Login<i class='fa-solid fa-right-to-bracket'></i></button>
 
                         <div class='register-link-login'>
-                            <p>Don't have account ?<a href='register.php' class="important">Register</a></p>
+                            <p>Don't have account ?<a href='inscription.php' class="important">Register</a></p>
                         </div>
                     <?php endif; ?>
                 </form>

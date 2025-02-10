@@ -31,7 +31,7 @@
             </div>
         </div>
         <?php endif; ?>
-        <?php if($langue === "english"): ?>
+        <?php if($langue === "en"): ?>
             <h3>Certifications</h3>
         </div>
         <div class='card-container'>
