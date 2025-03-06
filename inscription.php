@@ -46,7 +46,7 @@
             </form>
         </div>
     </main>
-</section> 
+</section>
 
 <script>
     // Fonction de validation du formulaire

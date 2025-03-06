@@ -56,7 +56,7 @@
         </div>
         <!-- Outils -->
         <div class="title-souscompetences">
-            <i class="fa-regular fa-toolbox"></i>
+            <i class="fa-solid fa-screwdriver-wrench"></i>
             <?php if($langue === "fr"){echo'<h3>Outils</h3>';}
                 if($langue === "en"){echo'<h3>Tools</h3>';}?>
         </div>

@@ -5,7 +5,7 @@ if (isset($_GET['langue'])) {
 }
 ?>
 <?php
-$titlePage = 'Benjamin Lorieul';
+$titlePage = 'Benjamin Lorieul - portfolio BTS SIO SLAM';
 require 'head.php';
 ?>
 <body class="body-login">

@@ -4,9 +4,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 if (isset($_GET['langue'])) {
     $_SESSION['langue'] = $_GET['langue'];
-}
-
-if (!isset($_SESSION['langue'])) {
+}else{
     $_SESSION['langue'] = 'fr';
 }
 

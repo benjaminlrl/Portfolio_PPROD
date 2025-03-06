@@ -18,7 +18,7 @@ require 'head.php';
                     <a href="login.php" class="btnRedirection">Se connecter</a>
                 </div>
         <?php endif; ?>
-        <?php if ($_SESSION['user_group']!="admin"): ?>
+        <?php if (isset($_SESSION['user_group']) && $_SESSION['user_group']!="admin"): ?>
                 <div class="succesInscription">
                     <div class="msg-echecConnexion">
                     <p>Vous n'avez pas les droits pour accéder à ces informations.</p>
